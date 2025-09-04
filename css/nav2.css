@@ -1,0 +1,147 @@
+:root {
+    --navBgColor: #f30e06;
+    --navColor: #ffffff;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--navBgColor);
+    color:var(--navColor);
+    /* box-shadow: 0px 10px 20px 2px black  ; */
+    transition:.3s;
+    z-index: 2;
+}
+.navbar:hover{
+    background-color: var(--navBgColor);    
+    /* box-shadow: 0px 10px 20px 6px rgb(3, 2, 2)  ; */
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+img.websiteLogo{
+    width: 30px;
+    height: 30px;
+    border-radius: 45px;
+    margin-right: 10px;
+}
+.navbar-menu {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-menu li a.navOption {
+    color:var(--navColor);
+    padding: 20px 12px;
+    border-radius: 2px;
+}
+
+.navbar-menu li a.navOption:hover {
+    color: var(--navBgColor); /* Hover color */
+    transition: color 0.3s;
+    background-color: var(--navColor);
+}
+
+.navbar-menu li a.navButton {
+    text-decoration: none;
+    color:var(--navBgColor);
+    background-color: var(--navColor);
+    transition: color 0.3s;
+    padding: 5px 12px;
+    border-radius: 15px;
+    transition: color 0.3s;
+}
+.navbar-menu li a.navButton:hover{
+    background-color: rgba(242, 80, 5, 0.959);
+    color:var(--navColor);
+    box-shadow: 0px 0px 10px ;
+}
+.search-bar {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px;
+}
+
+input.search{
+    background-color:var(--navBgColor);
+    color: var(--navColor);
+    font-family:  Arial ;
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+input.search:hover{
+    background-color: rgb(23, 156, 2);
+}
+a.profile img{
+    width: 30px;
+    border-radius: 45px;
+}
+@media (max-width: 768px) {
+    .navbar-menu {
+        position: absolute;
+        background-color: #333;
+        top: 60px; /* Below the navbar */
+        width: 100%;
+        left: 0;
+        display: none;
+        justify-content: center;
+        padding-bottom: 10px;
+        transition: .5s;
+        
+    }
+    .navbar-menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .navbar-menu ul li a.navButton,
+    .navbar-menu ul li a.navOption
+    {
+         all:initial; 
+       font-size: 1.2rem;
+        color: var(--navColor);
+        cursor: pointer;
+        padding: 5px 40px;
+        margin: 1px 0px;
+    }
+    .navbar-menu ul li a.navButton:hover,
+    .navbar-menu ul li a.navOption:hover
+    {
+         box-shadow: none;
+         background-color: transparent;
+         color:white;
+         background-color:var(--navBgColor);
+    }
+}

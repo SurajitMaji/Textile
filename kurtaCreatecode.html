@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Kurta Customizer</title>
+    <link rel="stylesheet" href="./css/kurtaCreate.css">
+    <link rel="stylesheet" href="./css/nav2.css"> 
+    <style>
+      
+    </style>
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+        <div class="menu-button" id="menu-btn" onclick="navOption()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <div class="navbar-brand">
+            <img src="./assets/IMG_20210904_175932.jpg" class="websiteLogo">
+            SELF&nbsp;TEXTILES
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <input type="submit" class="search" value="search">
+        <div class="navbar-menu" id="navBarMenu">
+            <ul>
+                <li><a href="index.html" class="navOption">Home</a></li>
+                <li><a href="category.html" class="navOption">About&nbsp;Us</a></li>
+                <li><a href="collection.html" class="navOption">Collection</a></li>
+                <li><a href="kurtaCreatecode.html" class="navOption">Design&nbsp;Studio</a></li>
+                <li><a href="aboutUs.html" class="navOption">Testimonial</a></li>
+                <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>
+                <li><a href="login.html" class="navButton">Login</a></li>
+            </ul>
+            
+        </div>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <header>
+            <h1>Men's Kurta Customizer</h1>
+            <p class="subtitle">Design your perfect kurta with our customizer tool</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="preview-section">
+                <div id="kurta-base">Base</div>
+                <div id="kurta-body">Body</div>
+                <div id="kurta-sleeves"> Sleeves</div>
+                <div id="kurta-collar">Collar</div>
+                <div id="kurta-pockets">Pocket</div>
+                <div id="kurta-buttons">Button</div>
+                <div id="kurta-back">Back</div>
+            </div>
+            
+            <div class="customizer-section">
+                <h2 class="options-title">Customize Your Kurta</h2>
+                
+                <div class="option-group">
+                    <span class="option-title">1. Select Kurta Color:</span>
+                    <div class="color-options">
+                        <div class="color-option selected" style="background-color: #ecf0f1;" data-color="#ecf0f1"></div>
+                        <div class="color-option" style="background-color: #166088;" data-color="#166088"></div>
+                        <div class="color-option" style="background-color: #4a6fa5;" data-color="#4a6fa5"></div>
+                        <div class="color-option" style="background-color: #3d3d3d;" data-color="#3d3d3d"></div>
+                        <div class="color-option" style="background-color: #800020;" data-color="#800020"></div>
+                        <div class="color-option" style="background-color: #5e3023;" data-color="#5e3023"></div>
+                        <div class="color-option" style="background-color: #dcb68a;" data-color="#dcb68a"></div>
+                        <div class="color-option" style="background-color: #d8ae5e;" data-color="#d8ae5e"></div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">2. Select Body Shape:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-shape="regular">Regular Fit</div>
+                        <div class="select-option" data-shape="slim">Slim Fit</div>
+                        <div class="select-option" data-shape="short">Short Kurta</div>
+                        <div class="select-option" data-shape="long">Long Kurta</div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">3. Sleeve Design:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-sleeve="regular">Regular</div>
+                        <div class="select-option" data-sleeve="short">Short</div>
+                        <div class="select-option" data-sleeve="flared">Flared</div>
+                        <div class="select-option" data-sleeve="angrakha">Angrakha</div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">4. Collar Style:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-collar="mandarin">Mandarin</div>
+                        <div class="select-option" data-collar="band">Band</div>
+                        <div class="select-option" data-collar="v-neck">V-Neck</div>
+                        <div class="select-option" data-collar="round">Round</div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">5. Pocket Style:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-pocket="none">No Pocket</div>
+                        <div class="select-option" data-pocket="single">Single</div>
+                        <div class="select-option" data-pocket="double">Double</div>
+                        <div class="select-option" data-pocket="hidden">Hidden</div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">6. Button Style:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-button="plain">Plain</div>
+                        <div class="select-option" data-button="decorative">Decorative</div>
+                        <div class="select-option" data-button="contrast">Contrast</div>
+                        <div class="select-option" data-button="hidden">Hidden</div>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <span class="option-title">7. Back Shoulder Design:</span>
+                    <div class="select-options">
+                        <div class="select-option selected" data-back="plain">Plain</div>
+                        <div class="select-option" data-back="gathered">Gathered</div>
+                        <div class="select-option" data-back="pleated">Pleated</div>
+                        <div class="select-option" data-back="embroidered">Embroidered</div>
+                    </div>
+                </div>
+                
+                <button class="reset-btn">Reset to Default</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Current customization options
+            const kurtaOptions = {
+                color: '#ecf0f1',
+                bodyShape: 'regular',
+                sleeveDesign: 'regular',
+                collarStyle: 'mandarin',
+                pocketStyle: 'none',
+                buttonStyle: 'plain',
+                backDesign: 'plain'
+            };
+
+            // DOM elements
+            const colorOptions = document.querySelectorAll('.color-option');
+            const bodyShapeOptions = document.querySelectorAll('[data-shape]');
+            const sleeveOptions = document.querySelectorAll('[data-sleeve]');
+            const collarOptions = document.querySelectorAll('[data-collar]');
+            const pocketOptions = document.querySelectorAll('[data-pocket]');
+            const buttonOptions = document.querySelectorAll('[data-button]');
+            const backOptions = document.querySelectorAll('[data-back]');
+            const resetBtn = document.querySelector('.reset-btn');
+            
+            const kurtaBase = document.getElementById('kurta-base');
+            const kurtaBody = document.getElementById('kurta-body');
+            const kurtaSleeves = document.getElementById('kurta-sleeves');
+            const kurtaCollar = document.getElementById('kurta-collar');
+            const kurtaPockets = document.getElementById('kurta-pockets');
+            const kurtaButtons = document.getElementById('kurta-buttons');
+            const kurtaBack = document.getElementById('kurta-back');
+
+            // Initial render
+            updateKurta();
+
+            // Event listeners for color options
+            colorOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    colorOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.color = this.dataset.color;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for body shape options
+            bodyShapeOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    bodyShapeOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.bodyShape = this.dataset.shape;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for sleeve design options
+            sleeveOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    sleeveOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.sleeveDesign = this.dataset.sleeve;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for collar style options
+            collarOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    collarOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.collarStyle = this.dataset.collar;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for pocket style options
+            pocketOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    pocketOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.pocketStyle = this.dataset.pocket;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for button style options
+            buttonOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    buttonOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.buttonStyle = this.dataset.button;
+                    updateKurta();
+                });
+            });
+
+            // Event listeners for back design options
+            backOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    backOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    kurtaOptions.backDesign = this.dataset.back;
+                    updateKurta();
+                });
+            });
+
+            // Reset button
+            resetBtn.addEventListener('click', function() {
+                // Reset options
+                kurtaOptions.color = '#ecf0f1';
+                kurtaOptions.bodyShape = 'regular';
+                kurtaOptions.sleeveDesign = 'regular';
+                kurtaOptions.collarStyle = 'mandarin';
+                kurtaOptions.pocketStyle = 'none';
+                kurtaOptions.buttonStyle = 'plain';
+                kurtaOptions.backDesign = 'plain';
+
+                // Reset UI selections
+                colorOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('.color-option[data-color="#ecf0f1"]').classList.add('selected');
+                
+                bodyShapeOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-shape="regular"]').classList.add('selected');
+                
+                sleeveOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-sleeve="regular"]').classList.add('selected');
+                
+                collarOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-collar="mandarin"]').classList.add('selected');
+                
+                pocketOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-pocket="none"]').classList.add('selected');
+                
+                buttonOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-button="plain"]').classList.add('selected');
+                
+                backOptions.forEach(opt => opt.classList.remove('selected'));
+                document.querySelector('[data-back="plain"]').classList.add('selected');
+
+                updateKurta();
+            });
+
+            // Function to update kurta visualization
+            function updateKurta() {
+                // Set base color
+                kurtaBase.style.backgroundColor = kurtaOptions.color;
+                
+                // Clear previous styles
+                kurtaBody.style.cssText = '';
+                kurtaSleeves.style.cssText = '';
+                kurtaCollar.style.cssText = '';
+                kurtaPockets.style.cssText = '';
+                kurtaButtons.style.cssText = '';
+                kurtaBack.style.cssText = '';
+                
+                // Update based on options
+                updateBodyShape();
+                updateSleeveDesign();
+                updateCollarStyle();
+                updatePocketStyle();
+                updateButtonStyle();
+                updateBackDesign();
+            }
+
+            function updateBodyShape() {
+                switch (kurtaOptions.bodyShape) {
+                    case 'regular':
+                        kurtaBody.style.width = '300px';
+                        kurtaBody.style.height = '450px';
+                        break;
+                    case 'slim':
+                        kurtaBody.style.width = '280px';
+                        kurtaBody.style.height = '470px';
+                        break;
+                    case 'short':
+                        kurtaBody.style.width = '300px';
+                        kurtaBody.style.height = '400px';
+                        break;
+                    case 'long':
+                        kurtaBody.style.width = '300px';
+                        kurtaBody.style.height = '500px';
+                        break;
+                }
+                
+                kurtaBody.style.backgroundColor = kurtaOptions.color;
+                kurtaBody.style.borderRadius = kurtaOptions.bodyShape === 'slim' ? '6px 6px 0 0' : '10px 10px 0 0';
+            }
+
+            function updateSleeveDesign() {
+                const sleeveWidth = kurtaOptions.bodyShape === 'slim' ? '280px' : '300px';
+                
+                switch (kurtaOptions.sleeveDesign) {
+                    case 'regular':
+                        kurtaSleeves.innerHTML = `
+                            <div style="position: absolute; top: 10px; left: -80px; width: 80px; height: 250px; background-color: ${kurtaOptions.color}; border-radius: 40px 0 0 40px;"></div>
+                            <div style="position: absolute; top: 10px; right: -80px; width: 80px; height: 250px; background-color: ${kurtaOptions.color}; border-radius: 0 40px 40px 0;"></div>
+                        `;
+                        break;
+                    case 'short':
+                        kurtaSleeves.innerHTML = `
+                            <div style="position: absolute; top: 10px; left: -60px; width: 60px; height: 150px; background-color: ${kurtaOptions.color}; border-radius: 30px 0 0 30px;"></div>
+                            <div style="position: absolute; top: 10px; right: -60px; width: 60px; height: 150px; background-color: ${kurtaOptions.color}; border-radius: 0 30px 30px 0;"></div>
+                        `;
+                        break;
+                    case 'flared':
+                        kurtaSleeves.innerHTML = `
+                            <div style="position: absolute; top: 10px; left: -100px; width: 100px; height: 300px; background-color: ${kurtaOptions.color}; border-radius: 50px 0 0 50px;"></div>
+                            <div style="position: absolute; top: 10px; right: -100px; width: 100px; height: 300px; background-color: ${kurtaOptions.color}; border-radius: 0 50px 50px 0;"></div>
+                        `;
+                        break;
+                    case 'angrakha':
+                        kurtaSleeves.innerHTML = `
+                            <div style="position: absolute; top: 10px; left: -100px; width: 100px; height: 250px; background-color: ${kurtaOptions.color}; border-radius: 50px 0 0 50px;"></div>
+                            <div style="position: absolute; top: 10px; right: -60px; width: 60px; height: 200px; background-color: ${kurtaOptions.color}; border-radius: 0 30px 30px 0;"></div>
+                            <div style="position: absolute; top: 160px; left: 25%; width: 50%; height: 60px; background-color: ${kurtaOptions.color}; border-radius: 0 0 30px 30px;"></div>
+                        `;
+                        break;
+                }
+            }
+
+            function updateCollarStyle() {
+                switch (kurtaOptions.collarStyle) {
+                    case 'mandarin':
+                        kurtaCollar.innerHTML = `
+                            <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 40%; height: 20px; background-color: ${kurtaOptions.color}; border-radius: 0 0 10px 10px;"></div>
+                            <div style="position: absolute; top: 10px; left: 30%; width: 40%; height: 2px; background-color: rgba(0,0,0,0.1);"></div>
+                        `;
+                        break;
+                    case 'band':
+                        kurtaCollar.innerHTML = `
+                            <div style="position: absolute; top: -5px; left: 30%; width: 40%; height: 30px; background-color: ${kurtaOptions.color}; border: 1px solid rgba(0,0,0,0.1);"></div>
+                        `;
+                        break;
+                    case 'v-neck':
+                        kurtaCollar.innerHTML = `
+                            <div style="position: absolute; top: 0; left: 30%; width: 40%; height: 50px; clip-path: polygon(50% 100%, 100% 0, 0 0); background-color: ${kurtaOptions.color};"></div>
+                        `;
+                        break;
+                    case 'round':
+                        kurtaCollar.innerHTML = `
+                            <div style="position: absolute; top: 0; left: 30%; width: 40%; height: 30px; background-color: ${kurtaOptions.color}; border-radius: 0 0 50px 50px;"></div>
+                        `;
+                        break;
+                         }
+                }
+
+                function updatePocketStyle() {
+                    switch (kurtaOptions.pocketStyle) {
+                        case 'none':
+                            kurtaPockets.innerHTML = '';
+                            break;
+                        case 'single':
+                            kurtaPockets.innerHTML = `
+                                <div style="position: absolute; top: 250px; left: 50px; width: 60px; height: 80px; background-color: ${kurtaOptions.color}; border: 1px solid #aaa;"></div>
+                            `;
+                            break;
+                        case 'double':
+                            kurtaPockets.innerHTML = `
+                                <div style="position: absolute; top: 250px; left: 50px; width: 60px; height: 80px; background-color: ${kurtaOptions.color}; border: 1px solid #aaa;"></div>
+                                <div style="position: absolute; top: 250px; right: 50px; width: 60px; height: 80px; background-color: ${kurtaOptions.color}; border: 1px solid #aaa;"></div>
+                            `;
+                            break;
+                        case 'hidden':
+                            kurtaPockets.innerHTML = `
+                                <div style="position: absolute; top: 250px; left: 50px; width: 60px; height: 80px; border: 1px dashed transparent;"></div>
+                            `;
+                            break;
+                    }
+                }
+
+                function updateButtonStyle() {
+                    switch (kurtaOptions.buttonStyle) {
+                        case 'plain':
+                            kurtaButtons.innerHTML = `
+                                <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%); width: 6px; height: 200px; background-color: #555;"></div>
+                            `;
+                            break;
+                        case 'decorative':
+                            kurtaButtons.innerHTML = `
+                                <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%);">
+                                    ${Array.from({ length: 5 }, (_, i) =>
+                                        `<div style="width: 10px; height: 10px; margin: 15px auto; background-color: gold; border-radius: 50%;"></div>`
+                                    ).join('')}
+                                </div>
+                            `;
+                            break;
+                        case 'contrast':
+                            kurtaButtons.innerHTML = `
+                                <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%);">
+                                    ${Array.from({ length: 5 }, (_, i) =>
+                                        `<div style="width: 8px; height: 8px; margin: 15px auto; background-color: #000; border-radius: 50%;"></div>`
+                                    ).join('')}
+                                </div>
+                            `;
+                            break;
+                        case 'hidden':
+                            kurtaButtons.innerHTML = '';
+                            break;
+                    }
+                }
+
+                function updateBackDesign() {
+                    switch (kurtaOptions.backDesign) {
+                        case 'plain':
+                            kurtaBack.innerHTML = '';
+                            break;
+                        case 'gathered':
+                            kurtaBack.innerHTML = `
+                                <div style="position: absolute; top: 350px; left: 20%; width: 60%; height: 20px; background-color: ${kurtaOptions.color}; border-top: 2px dashed #999;"></div>
+                            `;
+                            break;
+                        case 'pleated':
+                            kurtaBack.innerHTML = `
+                                ${[0, 1, 2].map(i =>
+                                    `<div style="position: absolute; top: 300px; left: ${40 + i * 30}px; width: 10px; height: 100px; background-color: rgba(0,0,0,0.2);"></div>`
+                                ).join('')}
+                            `;
+                            break;
+                        case 'embroidered':
+                            kurtaBack.innerHTML = `
+                                <div style="position: absolute; top: 320px; left: 50%; transform: translateX(-50%); width: 100px; height: 60px; background: repeating-linear-gradient(45deg, gold, gold 4px, transparent 4px, transparent 8px); border-radius: 10px;"></div>
+                            `;
+                            break;
+                    }
+                }
+            });
+    </script>
+</body>
+</html>
+  

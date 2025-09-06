@@ -39,7 +39,6 @@
     width: 350px;
 }
 .product-details-container{
-    border: 2px solid rgb(226, 226, 226);
     padding: 5px;
     margin: 0px 10px;
     display: flex;
@@ -47,17 +46,104 @@
     justify-content: flex-start;
 }
 .product-details-container .product-name{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: arial;
-    font-weight: bold;
+    font-weight: bolder;
+    color: rgb(145, 145, 145);
 }
-
+.product-details-container .price{
+    color: rgb(255, 159, 15);
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 .wishlist img{
- width: 40px;
+ width: 30px;
+ margin: 5px 10px;
+}
+.product-details-container .product-description{
+    margin: 8px 5px;
+    font-size: .9rem;
+    font-family: arial;
+    font-style:italic;
+}
+.size-set-area,
+.color-set-area,
+.quantity-set-area{
+    display: flex;
+    margin: 5px;  
+    align-items: center;  
+}
+.size-level,
+.color-level,
+.quantity-level{
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.size-setup {
+    margin: 0px 5px;
+     
+}
+.size-setup span{
+    border:2px dashed black;
+    padding: 2px 6px;
+    margin: 0px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .9s;
+}
+.size-setup span:hover{
+    border:2px solid black;
+}
+.color-setup span{
+    background-color: aquamarine;
+    padding: 5px 15px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.color-setup .blue{
+    background-color: blue;
+}
+.color-setup .red{
+    background-color: red;
+}
+.color-setup .pink{
+    background-color: pink;
+}
+.color-setup .cream{
+    background-color:rgb(246, 255, 215);
 }
 
+.quantity-setup{
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.add,
+.minus{
+    cursor: pointer;
+    padding: 3px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    margin: 0px 4px;
+}
+.ratting-area{
+    display: flex;
+    margin: 10px 2px;
+    align-items: center;
 
-
+}
+.rattings-value{
+    margin: 0px 10px;
+    font-size: small;
+    font-weight: 200;
+}
+.rattings-value span{
+    margin: 0px 3px;
+}
    @media (max-width: 767px){
     .perticular-product-area{
     display: flex;

@@ -39,7 +39,7 @@
    .wishlist{
     position: relative;
    }
-   img.wish-tag{
+     .each-product img.wish-tag{
     width: 24px;
     position: absolute;
     transition:.5s
@@ -106,19 +106,25 @@
       grid-template-columns: repeat(2,1fr);
       gap: 0px;
       justify-content: center;
-      padding: 10px;
+      padding: 0px;
       }
       
    .each-product{
-      margin: 10px;
+      margin: 0px;
    }
    
    img.product-image{
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
    }
    
    .update-tag{
     width: 30px;
+   }
+   
+   .each-product .action-button-area{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
    }
 }

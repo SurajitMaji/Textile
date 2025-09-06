@@ -140,14 +140,17 @@ const stars=document.getElementsByClassName('rattings');
              }
         product_details.innerHTML+=`
         <div class="each-product">
-            <div class="image-area">
+            <a class="image-area" href="product.html">
+                <div class="wishlist">
+                    <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
+                </div>
                 <div class="tag">
                     <img src="${tag_value}" class="update-tag" alt="" srcset="">
                 </div>
                 <div class="product-image-area">
                     <img src="${products[i].image}" alt="" srcset="" class="product-image">
                 </div>
-            </div>
+            </a>
             <div class="details">
                 <div class="product-name">
                     ${products[i].name}
@@ -158,8 +161,8 @@ const stars=document.getElementsByClassName('rattings');
                 </div>
             </div>
             <div class="action-button-area">
-                <a href="https://wa.me/917679687016?text=Hello%20this%20is%20my%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="order-btn">Order Now</a> 
-                <a href="https://wa.me/?text=I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="add-to-cart-btn">Add to Cart</a>   
+                <a target="_blank" href="https://wa.me/917679687016?text=Hello%20this%20is%20my%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="order-btn">Order Now</a> 
+                <a target="_blank" href="https://wa.me/?text=I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="add-to-cart-btn">Add to Cart</a>   
             </div>
             <div class="rattings">
                 <img src="./assets/1828884.png" class="ratting-star">

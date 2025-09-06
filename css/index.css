@@ -147,4 +147,8 @@ footer {
   .hero p {
     font-size: 1rem;
   }
+  
+.hero .hero-image .hero-img{
+  width: 250px;
+}
 }

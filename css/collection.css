@@ -10,15 +10,17 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    border:.5px solid rgb(255, 255, 255);
    }
    .each-product:hover{
       transition: .3s;
-    box-shadow: 1px 1px 5px 1px;
+    /* box-shadow: 1px 1px 5px 1px; */
+    border:.5px solid rgb(206, 206, 206);
 
 
    }
    .image-area{
-    background-color:rgb(240, 240, 240);
+    background-color:rgb(245, 245, 245);
     padding: 10px;
     border-radius: 2px;
    }
@@ -34,8 +36,18 @@
     height: 200px;
     object-fit: contain;
    }
-
-
+   .wishlist{
+    position: relative;
+   }
+   img.wish-tag{
+    width: 24px;
+    position: absolute;
+    transition:.5s
+   }
+   
+   img.wish-tag:hover{
+      scale:1.1;
+   }
    .tag{
     display: flex;
     justify-content: end;
@@ -91,8 +103,22 @@
    .product-area{
       margin:20px 0px;
       display: grid;
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(2,1fr);
       gap: 0px;
       justify-content: center;
+      padding: 10px;
       }
+      
+   .each-product{
+      margin: 10px;
+   }
+   
+   img.product-image{
+    width: 180px;
+    height: 180px;
+   }
+   
+   .update-tag{
+    width: 30px;
+   }
 }

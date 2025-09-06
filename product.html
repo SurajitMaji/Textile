@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav2.css"> 
+    <link rel="stylesheet" href="./css/menuButton.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+    
+     <header>
+        <nav class="navbar">
+        <div class="menu-button" id="menu-btn" onclick="navOption()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <div class="navbar-brand">
+            <img src="./assets/IMG_20210904_175932.jpg" class="websiteLogo">
+            SELF&nbsp;TEXTILES
+        </div>
+        <!-- <input type="text" class="search-bar" placeholder="Search...">
+        <input type="submit" class="search" value="search"> -->
+        <div class="navbar-menu" id="navBarMenu">
+            <ul>
+                <li><a href="index.html" class="navOption">Home</a></li>
+                <li><a href="category.html" class="navOption">Category</a></li>
+                <li><a href="collection.html" class="navOption">Collection</a></li>
+                <li><a href="kurtaCreatecode.html" class="navOption">Design&nbsp;Studio</a></li>
+                <li><a href="aboutUs.html" class="navOption">Testimonial</a></li>
+                <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>
+                <li><a href="login.html" class="navButton">Login</a></li>
+            </ul>
+            
+        </div>
+        </nav>
+    </header>
+    
+    <section class="perticular-product-area">
+        <div class="image-area">
+            <div class="tap-image-area">
+                <div class="tap-image-container">
+                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
+                </div>
+                <div class="tap-image-container">
+                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
+                </div>
+                <div class="tap-image-container">
+                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="./collection/IMG_20250905_010724.jpg" alt="" class="image">
+            </div>
+        </div>
+        <div class="product-details-container">
+            <div class="product-name">
+                Denim Shirt
+            </div>
+            <div class="price">
+                Rs.
+                    <span> 459.00 </span> /-                
+            </div>
+            <div class="action-btn-container">                
+                <div class="wishlist">
+                    <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
+                </div>                
+                <div class="action-button-area">
+                    <a target="_blank" href="https://wa.me/917679687016?text=Hello%20this%20is%20my%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="order-btn">Order Now</a> 
+                    <a target="_blank" href="https://wa.me/?text=I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="add-to-cart-btn">Add to Cart</a>   
+                    
+                </div>
+            </div>
+            <div class="product-description">
+                Men Loose Fit Mid Rise Light Blue Jeans
+            </div>
+            <div class="size-set-area">
+                <div class="size-level">Size</div>
+                <div class="size-setup">
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                </div>
+            </div>
+            <div class="color-set-area">                
+                <div class="color-level">Color</div>
+                <div class="color-setup">
+                    <span class="blue"></span>
+                    <span class="red"></span>
+                    <span class="pink"></span>
+                    <span class="cream"></span>
+                </div>
+            </div>
+            
+            <div class="qunatity-set-area">                
+                <div class="qunatity-level">Qunatity</div>
+                <div class="qunatity-setup">
+                    <span class="add" onclick="increaseProduct()">+</span>
+                    <span class="quantity-value" id="quantity_value">1</span>
+                    <span class="minus" onclick="decreaseProduct()">-</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product-area" id="products">
+            
+    </section> 
+
+    
+  <footer id="contact">
+    <p>&copy; 2025 SELF TEXTILES | Designed for Business Excellence</p>
+    <div class="footer-conent">
+      <a href="#" target="_blank" class="footer-link">Company Info</a>
+      <a href="#" target="_blank" class="footer-link">Terms & Polices</a>
+      <a href="#" target="_blank" class="footer-link">Career</a>
+      <a href="#" target="_blank" class="footer-link">Certificates</a>
+    </div>
+  </footer> 
+
+
+    <!-- <script src="./script/index.js"></script> -->
+    <script src="./script/menuButton.js"></script>
+    <script src="./script/collection.js"></script>
+</body>
+</html>

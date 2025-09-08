@@ -43,25 +43,16 @@
     
     <section class="perticular-product-area">
         <div class="image-area">
-            <div class="tap-image-area">
-                <div class="tap-image-container">
-                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
-                </div>
-                <div class="tap-image-container">
-                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
-                </div>
-                <div class="tap-image-container">
-                    <img src="./assets/depositphotos_569012044-stock-illustration-vector-illustration-woman-shirt.jpg" alt="" class="tap-image">
-                </div>
+            <div class="tap-image-area" id="tap_image_area">
             </div>
             <div class="product-image">
-                <img src="./collection/IMG_20250905_010724.jpg" alt="" class="image">
+                <img src="" alt="" class="image" id="mainImage">
             </div>
         </div>
         <div class="product-details-container">
             
-                <div class="tag">
-                    <img src="./assets/sale.png" class="update-tag" alt="" srcset="">
+                <div class="tag" id="main_tag">
+                    <!-- <img src="./assets/sale.png" class="update-tag" alt="" srcset=""> -->
                 </div>
             <div class="product-name">
                 Denim Shirt
@@ -74,9 +65,7 @@
                 <div class="wishlist">
                     <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
                 </div>                
-                <div class="action-button-area">
-                    <a target="_blank" href="https://wa.me/917679687016?text=Hello%20this%20is%20my%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="order-btn">Order Now</a> 
-                    <a target="_blank" href="https://wa.me/?text=I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0Ahttps%3A%2F%2Fsurajitmaji.github.io%2FPortfolio%2Fimages%2FIMG_20240328_090806.jpg" class="add-to-cart-btn">Add to Cart</a>   
+                <div class="action-button-area" id="main_action_button_area">
                     
                 </div>
             </div>
@@ -90,11 +79,11 @@
             </div>
             <div class="color-set-area">                
                 <div class="color-level">Color :</div>
-                <div class="color-setup">
-                    <span class="blue"></span>
+                <div class="color-setup" id="avail_color_area">
+                    <!-- <span class="blue"></span>
                     <span class="red"></span>
                     <span class="pink"></span>
-                    <span class="cream"></span>
+                    <span class="cream"></span> -->
                 </div>
             </div>
             
@@ -121,7 +110,7 @@
                     <span>120</span>
                 </div>
             </div>
-            <div class="product-description">
+            <div class="product-description" id="desctioption">
                 Men Loose Fit Mid Rise Light Blue Jeans
             </div>
         </div>
@@ -144,8 +133,17 @@
   </footer> 
 
 
-    <!-- <script src="./script/index.js"></script> -->
     <script src="./script/menuButton.js"></script>
+    <script src="./script/productlist.js"></script>
     <script src="./script/collection.js"></script>
+    <script src="./script/product.js"></script>
+    <script>
+        
+        // function openImage(imgElement){
+        //     console.log('Image changed to:', imgElement.src);
+        //     let bigImage=document.getElementById('mainImage');
+        //     bigImage.src=smallimage.src;
+        // }
+    </script>
 </body>
 </html>

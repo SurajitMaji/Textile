@@ -1,3 +1,14 @@
+
+const h=document.getElementsByTagName("head")[0];
+    h.innerHTML+=`<link rel="shortcut icon" href="./assets/aviyati.ico" type="image/x-icon">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/nav2.css"> 
+  <link rel="stylesheet" href="./css/menuButton.css">
+
+    `;
+
 const nav=document.getElementById("header");
 nav.innerHTML=`
 
@@ -8,8 +19,8 @@ nav.innerHTML=`
             <div class="bar bar3"></div>
         </div>
         <div class="navbar-brand">
-            <img src="./assets/IMG_20210904_175932.jpg" class="websiteLogo">
-            SELF&nbsp;TEXTILES
+            <img src="./assets/aviyati.png" class="websiteLogo">
+            Aviyati&nbsp;Looms
         </div>
         <!-- <input type="text" class="search-bar" placeholder="Search...">
         <input type="submit" class="search" value="search"> -->

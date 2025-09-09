@@ -1,4 +1,6 @@
 
+
+// adding content with head tag
 const h=document.getElementsByTagName("head")[0];
     h.innerHTML+=`<link rel="shortcut icon" href="./assets/aviyati.ico" type="image/x-icon">
     
@@ -6,8 +8,12 @@ const h=document.getElementsByTagName("head")[0];
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/nav2.css"> 
   <link rel="stylesheet" href="./css/menuButton.css">
-
     `;
+
+//adding content with tittle tag
+
+const titl=document.getElementsByTagName("title")[0];
+titl.innerHTML+=` - Aviyati`;
 
 const nav=document.getElementById("header");
 nav.innerHTML=`

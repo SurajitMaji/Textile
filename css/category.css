@@ -1,0 +1,216 @@
+img{
+    width: 200px;
+}
+.category-container{
+    display: flex;
+    flex-direction: column;    
+    margin: 1px 0px;
+    font-family: 'cursive';
+}
+
+.high-fashion-area{
+    background-color: rgba(252, 26, 102, 0.74);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 20px 0px 20px;
+
+    .fashion-image-area{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 10px;
+        img{
+            width: 350px;
+        }
+    }
+    .high-fashion-details-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        color: aliceblue;
+        .high-fashion-level{
+            font-size: 2.2rem;
+            font-weight: bold;
+        font-family: system-ui;
+        }
+        .high-fashion-details{
+            font-size: .9rem;
+            font-family: cursive;
+        }        
+    }
+}
+.high-fashion-btn{
+    margin: 30px 2px;
+}
+a.button{
+    color: black;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    box-shadow: -.5px .5px 5px .5px;
+    transition: 1s;
+    border-radius: 5px;
+}
+a.high-fashion{
+    background-color: rgb(255, 255, 114);
+}
+a.button:hover{
+    box-shadow: -2px 2px 5px 2px;
+    margin:0px 10px 20px 30px ;
+}
+.inner-details{
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 750px;
+}
+.about-us-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-details-area{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.about-details-area .heading,
+.collcetion-heading
+{
+    font-size: 2.4rem;
+    margin: 20px 30px;
+}
+.about-details-area .description{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: .9rem;
+}
+.about-us-area .image-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.about-us-area .background-spot{
+    background-color: rgb(34, 167, 255);
+    width:30%;
+    height: 80%;
+    position: absolute;
+    top:52px;
+    right:40px;
+}
+.about-us-area img.image{
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.female-collection-area,
+.male-collection-area,
+.kids-collection-area
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* box-shadow: 0px 0px 1px 1px; */
+    border: .5px solid rgb(207, 207, 207);
+    padding: 10px;
+    margin: 25px 0px;
+}
+
+.male-collection-area{
+    direction: rtl;
+}
+.collcetion-image-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.collcetion-image-area .background-spot{
+    background-color: rgb(0, 0, 0);    
+    width: 290px;
+    height: 270px;
+    position: absolute;
+
+}
+
+.female-collection-area .background-spot,
+.female-collection-area a{
+    background:  linear-gradient(to right, rgb(255, 48, 100), rgba(247, 14, 130, 0.911),#ff83cbfb);
+}
+
+.male-collection-area .background-spot,
+.male-collection-area a{
+    background:  linear-gradient(to right, #cd8fffd3, rgba(255, 10, 132, 0.582),#f0e87686);
+
+}
+
+.kids-collection-area .background-spot,
+.kids-collection-area a{
+    background:  linear-gradient(to right, #e092c0d3, rgba(255, 130, 192, 0.582),#f9b3ff86);
+}
+
+.collcetion-image-area img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 2;
+}
+.collection-details-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding: 0px 30px;
+    align-items: baseline;
+}
+.collcetion-sub-heading{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.collcetion-description{
+    font-size: .9rem;
+    margin: 20px 0px;
+    display:flex;   
+    font-family: fangsong;
+}
+.male-collection-area .collcetion-description{
+  text-align: end; 
+}
+.collcetion-btn{
+    margin:20px 10px;
+}
+
+   @media (max-width: 767px){
+    .category-container{   
+    margin: 0px;
+    }  
+    .high-fashion-area{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 0px 20px;
+   }
+}
+   @media (max-width: 560px){    
+   .about-us-area{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .about-us-area .background-spot{    
+    top:66px;
+    right:80px;
+   }
+   .female-collection-area,
+    .male-collection-area,
+    .kids-collection-area{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 0px;
+    padding: 5px 0px;
+}
+
+}

@@ -226,6 +226,8 @@ a.button:hover{
 }
 .view-more-area{
     margin: 20px 0px;
+    display: flex;
+    justify-content: center;
 }
 .view-btn{
     background-color: #dadada86;
@@ -255,26 +257,6 @@ a.button:hover{
     }
 
 
-   @media (max-width: 767px){
-    .category-container{   
-    margin: 0px;
-    }  
-    .high-fashion-area{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 20px 0px 20px;
-   }
-.create-own-style .fashion-image-area{
-        position:static;
-        display: flex;
-        justify-content: center;
-    }
-.create-own-style .fashion-img{
-        position: static;
-    }
-}
-
-
 /* sale area */
 .sale-type-area{
     display: grid;
@@ -302,6 +284,77 @@ a.button:hover{
 }
 
 
+
+
+/* latest features area  */
+.latest-features-details-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+.every-feature{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px 1px;
+}
+.feature-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+}
+.feature-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature-title{
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: bold;
+    margin: 10px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.feature-description{
+    font-size: .7rem;
+    margin: 5px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.latest-features-details-area a.button{
+    font-size: .7rem;
+    padding: 10px 20px;
+    background-color: rgb(255, 247, 238);
+}
+
+
+   @media (max-width: 767px){
+    .category-container{   
+    margin: 0px;
+    }  
+    .high-fashion-area{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 0px 20px;
+   }
+    .create-own-style .fashion-image-area{
+            position:static;
+            display: flex;
+            justify-content: center;
+        }
+    .create-own-style .fashion-img{
+            position: static;
+        }
+        .latest-features-details-area{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+
+
+
    @media (max-width: 560px){    
    .about-us-area{
     display: flex;
@@ -314,28 +367,32 @@ a.button:hover{
    .female-collection-area,
     .male-collection-area,
     .kids-collection-area{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 0px 0px;
-    padding: 5px 0px;
-}
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 0px 0px;
+        padding: 5px 0px;
+    }
 
 
-.popular-outfit-image-area{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:0px;
-    width: fit-content;
-}
-.every-image-area .image-area{
-    width: 80%;
-    height: 190px;
-}
+    .popular-outfit-image-area{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:0px;
+        width: fit-content;
+    }
+    .every-image-area .image-area{
+        width: 80%;
+        height: 190px;
+    }
 
-.sale-type-area{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 5px;
-}
-
+    .sale-type-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }   
+    .latest-features-details-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
 }

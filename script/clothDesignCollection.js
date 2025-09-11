@@ -22,7 +22,7 @@
 
             cloth_area.innerHTML+=`
             <div class="each-product">
-                <a class="image-area" href="${productPageURL}">
+                <a class="image-area" href="#">
                     <div class="wishlist">
                         <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
                     </div>

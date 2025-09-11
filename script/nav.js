@@ -8,6 +8,11 @@ const h=document.getElementsByTagName("head")[0];
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/nav2.css"> 
   <link rel="stylesheet" href="./css/menuButton.css">
+    <meta property="og:title" content="Aviyati Textile Website">
+  <meta property="og:description" content="Explore premium textile collections at Aviyati.">
+  <meta property="og:image" content="https://surajitmaji.github.io/assets/aviyati-icon.png">
+  <meta property="og:url" content="https://surajitmaji.github.io/">
+  <meta property="og:type" content="aviyati">
     `;
 
 //adding content with tittle tag

@@ -41,6 +41,16 @@ for(let i=0;i<size;i++){
         <img src="${tag_value}" class="update-tag" alt="" srcset="">
     `;
 
+// product name
+var pName=document.getElementById('product_name');
+pName.innerHTML+=obj.name;
+
+//
+var pPrice=document.getElementById('price');
+pPrice.innerHTML+=`Rs.
+                    <span> ${obj.price} </span> /-  `;
+
+
  //  making text for user
            var textToUser=`
            Hello%20this%20is%20my%20product%20%F0%9F%91%87%0A

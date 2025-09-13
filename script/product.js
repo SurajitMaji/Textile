@@ -1,25 +1,35 @@
 
+
 const params = new URLSearchParams(window.location.search);
 var objId=params.get("id");
 obj=findObject(objId);
 
 //main dress image fetching
 const productImage=document.getElementById('mainImage');
-productImage.src=obj.image;
+productImage.src=obj.images[0];
 
 // setting up the images tape
+
+
 const tape=document.getElementById('tap_image_area');
-size=obj.image.length; // when image field is array
-size=1;
+size=obj.images.length; // when image field is array
+// size=1;
 for(let i=0;i<size;i++){
     tape.innerHTML+=`
         <div class="tap-image-container">
-            <img src="${obj.image}" alt="" class="tap-image" onclick="openImage(this)">
+            <img src="${obj.images[i]}" alt="" class="tap-image" onclick='openImage(this)'>
         </div>
     `;
 }
 
-
+function openImage(element){    
+    var productImg=document.getElementById('product_image');
+    // productImage.src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg';
+    productImg.innerHTML=`
+    <img src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg'>
+    `;
+    console.log('openImage is working');
+}
 // tag setup
 
     var tag=document.getElementById('main_tag');
@@ -57,14 +67,14 @@ pPrice.innerHTML+=`Rs.
            Id: ${obj.id} 
             Name: ${obj.name} 
             Price: ${obj.price} 
-            https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.image}`;
+            https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.images[0]}`;
    
             var textToSelf=`
             I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0A
             Id: ${obj.id} 
             Name: ${obj.name} 
             Price: ${obj.price} 
-            https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.image}`;
+            https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.images[0]}`;
     
     
     var action_area=document.getElementById('main_action_button_area');
@@ -76,7 +86,7 @@ pPrice.innerHTML+=`Rs.
 
 // set up the available color
 var color=document.getElementById('avail_color_area');
-size=obj.image.length; // when multiple colors are available
+// size=obj.image.length;  when multiple colors are available
 size=1;
 for(let i=0;i<size;i++){
     color.innerHTML+=`

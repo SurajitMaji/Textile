@@ -47,7 +47,7 @@
                         <img src="${tag_value}" class="update-tag" alt="" srcset="">
                     </div>
                     <div class="product-image-area">
-                        <img src="${products[i].image}" alt="" srcset="" class="product-image">
+                        <img src="${products[i].images[0]}" alt="" srcset="" class="product-image">
                     </div>
                 </a>
                 <div class="details">

@@ -6,6 +6,7 @@ class Product{
             this.id=0;
             this.name='Dress Name';
             this.image='./assets/7415529.png';
+            this.images=[];
             this.price=0;
             this.rattings='0.0';
             this.sale=0;
@@ -18,7 +19,7 @@ class Product{
         avilable,see){
             this.id=id;
             this.name=name;
-            this.image=image;
+            this.images.push(image);
             this.price=price;
             this.rattings=rattings;
             this.sale=sale;
@@ -29,7 +30,7 @@ class Product{
     setRequiredValues(id,name,image,price,color,category){
             this.id=id;
             this.name=name;
-            this.image=image;
+            this.images.push(image);
             this.price=price;
             this.color=color;
             this.category=category;
@@ -44,13 +45,16 @@ class Product{
     showProduct() {
         return `Id: ${this.id}\n 
         Name: ${this.name}\n 
-        Image: ${this.image}\n 
-        Price: ${this.Price}\n 
+        Images: ${this.images}\n 
+        Price: ${this.price}\n 
         Rattings: ${this.rattings}\n 
         Sale: ${this.sale}\n 
         NeW: ${this.neW}\n 
         Avilable: ${this.avilable}\n 
         see: ${this.see}\n `;             
+    }
+    addImage(image){
+            this.images.push(image);
     }
     makeUnseen(){
         this.see=0;
@@ -201,25 +205,26 @@ product_list2.push(p10);
 
 var p11=new Product();
     p11.setRequiredValues(11,
-    'Baby Dress',
-    './collection/IMG_20210811_125831.jpg',
-    55.00,
-    'rgba(255, 0, 119, 1)',
+    'Frock',
+    './collection/81095598-3a6b-4d4e-be45-6a310efeff3a.jpg',
+    100.00,
+    'rgba(165, 4, 4, 1)',
      'kids' 
     );
+p11.addImage('./collection/81095598-3a6b-4d4e-be45-6a310ef.jpg');
+p11.addDescription('This is Pure Cutton and Suitable for 6-7 years old baby girl');
 product_list2.push(p11);
 
 var p12=new Product();
     p12.setRequiredValues(12,
-    'Mask',
-     './collection/20210701_202029.jpg',
-     30.00,
-    'rgba(133, 130, 6, 1)',
+    'Rumal',
+     './collection/b4a825f3-35c1-4a58-b04b-07d.jpg',
+     10.00,
+    'rgba(255, 247, 178, 1)',
      'general' 
 
     );
 product_list2.push(p12);
-p12.makeSale();
 
 
 

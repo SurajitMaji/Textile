@@ -14,22 +14,20 @@ productImage.src=obj.images[0];
 const tape=document.getElementById('tap_image_area');
 size=obj.images.length; // when image field is array
 // size=1;
+// 
+// 
 for(let i=0;i<size;i++){
     tape.innerHTML+=`
         <div class="tap-image-container">
             <img src="${obj.images[i]}" alt="" class="tap-image" onclick='openImage(this)'>
-        </div>
+        </div>      
     `;
 }
 
-function openImage(element){    
-    var productImg=document.getElementById('product_image');
-    // productImage.src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg';
-    productImg.innerHTML=`
-    <img src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg'>
-    `;
-    console.log('openImage is working');
-}
+ function openImage(element){    
+             let bigImage=document.getElementById('mainImage');
+            bigImage.src=element.src;
+        }
 // tag setup
 
     var tag=document.getElementById('main_tag');

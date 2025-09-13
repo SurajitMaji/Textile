@@ -16,7 +16,7 @@
         <div class="image-area">
             <div class="tap-image-area" id="tap_image_area">
             </div>
-            <div class="product-image">
+            <div class="product-image" id="product_image">
                 <img src="" alt="" class="image" id="mainImage">
             </div>
         </div>
@@ -102,7 +102,15 @@
     <script src="./script/collection.js"></script>
     <script src="./script/product.js"></script>
     <script>
-        
+    console.log('openImage is not working');
+        function openImage(element){    
+    var productImg=document.getElementById('product_image');
+    // productImage.src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg';
+    productImg.innerHTML=`
+    <img src='./assets/46ee619c4e9a7ef84094381a5e83dbfe.jpg'>
+    `;
+    console.log('openImage is working');
+}
         // function openImage(imgElement){
         //     console.log('Image changed to:', imgElement.src);
         //     let bigImage=document.getElementById('mainImage');

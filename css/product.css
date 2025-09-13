@@ -15,7 +15,7 @@
     border-top: 10px solid black;
     border-bottom: 10px solid black;
 }
-.tap-image-container{
+.tap-image-container {
     background-color: rgb(233, 233, 233);
     display: flex;
     justify-content: center;
@@ -29,7 +29,6 @@
     width: 40px;
     max-height: 40px;
     object-fit: contain;
-  pointer-events: none;
 }
 .tap-image-container:hover{
     border: 1px solid black;

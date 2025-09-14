@@ -46,7 +46,7 @@
 .perticular-product-area .product-image img{
     width: 350px;  
     height: 100%;
-    object-fit:cover;
+    object-fit:contain;
     pointer-events: none;
 }
 .product-details-container{
@@ -190,4 +190,5 @@
 
 
 }
+
 

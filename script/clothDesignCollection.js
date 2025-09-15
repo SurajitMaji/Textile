@@ -5,24 +5,24 @@
             //  making text for user
            var textToUser=`
            Hello%20this%20is%20my%20Cloth%20%F0%9F%91%87%0A
-           Id: ${cloths[i].id} 
+           Id: ${cloths[i].clothId} 
             Name: ${cloths[i].name} 
             Price: ${cloths[i].perMeterPrice} 
             https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${cloths[i].images[i]}`;
 
             var textToSelf=`
             I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0A
-            Id: ${cloths[i].id} 
+            Id: ${cloths[i].clothId} 
             Name: ${cloths[i].name} 
             Price: ${cloths[i].perMeterPrice} 
             https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${cloths[i].images[i]}
             `;
 
-            var productPageURL=`product.html?id=${cloths[i].id}`;
+            var productPageURL=`cloth.html?id=${cloths[i].clothId}`;
 
             cloth_area.innerHTML+=`
             <div class="each-product">
-                <a class="image-area" href="#">
+                <a class="image-area" href="${productPageURL}">
                     <div class="wishlist">
                         <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
                     </div>

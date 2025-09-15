@@ -56,7 +56,7 @@ pName.innerHTML+=obj.name;
 //
 var pPrice=document.getElementById('price');
 pPrice.innerHTML+=`Rs.
-                    <span> ${obj.price} </span> /-  `;
+                    <span> ${obj.perMeterPrice} </span> /-  Per Meter`;
 
 
  //  making text for user
@@ -64,14 +64,14 @@ pPrice.innerHTML+=`Rs.
            Hello%20this%20is%20my%20product%20%F0%9F%91%87%0A
            Id: ${obj.id} 
             Name: ${obj.name} 
-            Price: ${obj.price} 
+            Price: ${obj.perMeterPrice} 
             https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.images[0]}`;
    
             var textToSelf=`
             I%20want%20to%20save%20as%20favorite%20product%20%F0%9F%91%87%0A
             Id: ${obj.id} 
             Name: ${obj.name} 
-            Price: ${obj.price} 
+            Price: ${obj.perMeterPrice} 
             https%3A%2F%2Fsurajitmaji.github.io%2Ftextile%2F${obj.images[0]}`;
     
     
@@ -81,9 +81,6 @@ pPrice.innerHTML+=`Rs.
         <a  class="add-to-cart-btn" href="https://wa.me/919874323889?text=${textToSelf}" target="_blank">Add to Cart</a>   
                     
     `;
-//size set up
-var sizeSet=document.getElementById('size_setup');
-sizeSet.innerHTML=`<span>${obj.size}</span>`;
 
 // set up the available color
 var color=document.getElementById('avail_color_area');

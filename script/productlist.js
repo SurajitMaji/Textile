@@ -2,12 +2,15 @@
     
 
 class Product{
+
     constructor(){        
             this.id=0;
             this.name='Dress Name';
             this.image='./assets/7415529.png';
             this.images=[];
             this.price=0;
+            this.size='';
+            this.color='white';
             this.rattings='0.0';
             this.sale=0;
             this.neW=0;
@@ -15,23 +18,25 @@ class Product{
             this.see=1;
             this.description='';
     }
-    setInitialValues(id, name, image, price, rattings, sale, neW, 
+    setInitialValues(id, name, image, price, size,rattings, sale, neW, 
         avilable,see){
             this.id=id;
             this.name=name;
             this.images.push(image);
             this.price=price;
+            this.size=size;
             this.rattings=rattings;
             this.sale=sale;
             this.neW=neW;
             this.avilable=avilable;
             this.see=see;
         }
-    setRequiredValues(id,name,image,price,color,category){
+    setRequiredValues(id,name,image,price,size,color,category){
             this.id=id;
             this.name=name;
             this.images.push(image);
             this.price=price;
+            this.size=size;
             this.color=color;
             this.category=category;
             this.rattings=4.1;
@@ -47,6 +52,7 @@ class Product{
         Name: ${this.name}\n 
         Images: ${this.images}\n 
         Price: ${this.price}\n 
+       Size: ${this.size}\n 
         Rattings: ${this.rattings}\n 
         Sale: ${this.sale}\n 
         NeW: ${this.neW}\n 
@@ -73,8 +79,7 @@ var product_list2=[];
 // finding the 'id' number is present in this list or not, if exist then return the object
 function findObject(id){
         for(var i=0;i<product_list2.length;i++){
-            if(product_list2[i].id==id){
-                var p=new Product();                
+            if(product_list2[i].id==id){         
                 return product_list2[i];
             }
         }
@@ -85,6 +90,7 @@ function findObject(id){
 //     'ImageURL',
 //     Price,
 //      'color'
+//      size
 //      'category'
 
 //     Rattings,
@@ -95,6 +101,7 @@ function findObject(id){
 var p1=new Product();    
      p1.setRequiredValues(1,    'Shirt',    './collection/IMG_20250905_010724.jpg',
     499.00,  
+    'XL',
     'rgb(251, 255, 225)',
      'men'   );
      
@@ -105,7 +112,8 @@ var p2=new Product();
     p2.setRequiredValues(2,
     'Blouse',
     './collection/IMG_20250905_010508.jpg',
-    249.00,
+    90.00,
+    '34',
     'rgba(229, 142, 255, 1)',
      'women' 
 
@@ -117,6 +125,7 @@ var p3=new Product();
     'Shirt',
     './collection/IMG_20250905_010853.jpg',
     549.00,
+    'XL',
     'rgba(235, 238, 207, 1)',
      'men' 
 
@@ -125,14 +134,16 @@ product_list2.push(p3);
 
 var p4=new Product();
     p4.setRequiredValues(4,
-    'Firil Blouse',
-    './collection/20210615_084702.jpg',
-    149.00,
-    'rgba(212, 14, 14, 1)',
+    'Blouse',
+    './collection/b7c5caa3-c5b1-4dd0-b26c-433f1ea373.jpg',
+    90.00,
+    '32',
+    'rgba(248, 234, 153, 1)',
      'men'
     );
+p4.addImage('./collection/b7c5caa3-c5b1-4dd0-b26c-433f1ea3733f.jpg');
+
 product_list2.push(p4);
-p4.makeUnseen();
 
 
 
@@ -141,7 +152,8 @@ var p5=new Product();
     p5.setRequiredValues(5,
     'Blouse',
     './collection/IMG_20250905_010206.jpg',
-    296.00,
+    90.00,
+    '34',
     'rgba(4, 62, 189, 1)',
      'women' 
 
@@ -150,13 +162,15 @@ product_list2.push(p5);
 
 var p6=new Product();
     p6.setRequiredValues(6,
-    'Frock',
-    './collection/IMG_20210904_17.jpg',
-    200.00,
-    'rgba(212, 14, 14, 1)',
-     'girls' 
+    'Blouse',
+    './collection/08e991e4-e14b-4332-b25a.jpg',
+     90.00,
+    '32',
+    'rgba(212, 198, 0, 1)',
+     'women' 
 
     );
+    p6.addImage('./collection/08e991e4-e14b-4332.jpg');
 product_list2.push(p6);
 
 var p7=new Product();
@@ -164,6 +178,7 @@ var p7=new Product();
     'Blouse',
     './collection/20210721_182614.jpg',
     296.00,
+    '1-2Y',
     'rgba(10, 6, 6, 1)',
      'women' 
     );
@@ -174,7 +189,7 @@ var p8=new Product();
     p8.setRequiredValues(8,
     'Jhabela',
     './collection/IMG_20210811_125859.jpg',
-    80.00,
+    60.00,
     'rgba(7, 1, 56, 1)',
      'kids' 
 
@@ -185,7 +200,8 @@ var p9=new Product();
     p9.setRequiredValues(9,
     'Jhabela',
     './collection/IMG_20210912_115926.jpg',
-    58.00,
+    35.00,
+    '2-10M',
     'rgba(29, 28, 28, 1)',
      'kids' 
 
@@ -196,7 +212,8 @@ var p10=new Product();
     p10.setRequiredValues(10,
     'Baby Jhabela',
      './collection/IMG_20210912_115848.jpg',
-     60.00,
+     40.00,
+     '0-8M',
     'rgba(253, 99, 150, 1)',
      'kids' 
 
@@ -207,7 +224,8 @@ var p11=new Product();
     p11.setRequiredValues(11,
     'Frock',
     './collection/81095598-3a6b-4d4e-be45-6a310efeff3a.jpg',
-    100.00,
+    130.00,
+    '6Y',    
     'rgba(165, 4, 4, 1)',
      'kids' 
     );
@@ -220,6 +238,7 @@ var p12=new Product();
     'Rumal',
      './collection/b4a825f3-35c1-4a58-b04b-07d.jpg',
      10.00,
+     'N',
     'rgba(255, 247, 178, 1)',
      'general' 
 

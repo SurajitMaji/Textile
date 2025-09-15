@@ -34,6 +34,7 @@ class Cloth{
         this.images.push(photo);
     }
 }
+
 // var v1.setCloth(clothId,
 // name,
 // brandName,
@@ -45,6 +46,14 @@ class Cloth{
 
 //clothes array
 var clothList=[];
+function findObject(id){
+        for(var i=0;i<clothList.length;i++){
+            if(clothList[i].clothId==id){              
+                return clothList[i];
+            }
+        }
+        return false;
+    }
 
 var c1=new Cloth();
 c1.setCloth(

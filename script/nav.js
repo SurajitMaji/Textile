@@ -33,13 +33,17 @@ nav.innerHTML=`
             <img src="./assets/aviyati.png" class="websiteLogo">
             Aviyati&nbsp;Looms
         </div>
-        <!-- <input type="text" class="search-bar" placeholder="Search...">
-        <input type="submit" class="search" value="search"> -->
+        <div class="serach-area">
+         <input type="text" class="search-bar" placeholder="Search...">
+        <input type="submit" class="search" value="search">
+        </div>
         <div class="navbar-menu" id="navBarMenu">
             <ul>
                 <li><a href="index.html" class="navOption">Home</a></li>
                 <li><a href="category.html" class="navOption">Category</a></li>
                 <li><a href="collection.html" class="navOption">Collection</a></li>
+                <li><a href="clothCollection.html" class="navOption">Cloths</a></li>
+                <li><a href="designCollection.html" class="navOption">Design </a></li>
                 <li><a href="kurtaCreatecode.html" class="navOption">Design&nbsp;Studio</a></li>
                 <li><a href="aboutUs.html" class="navOption">Testimonial</a></li>
                 <!-- <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>

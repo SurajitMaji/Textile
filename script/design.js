@@ -5,8 +5,10 @@ var objId=params.get("id");
 obj=findObject(objId);
 
 //main dress image fetching
+//imageFolder --> variable store the location of the design images
+var ig=imageFolder+obj.images[0];
 const productImage=document.getElementById('mainImage');
-productImage.src=obj.images[0];
+productImage.src=ig;
 
 // setting up the images tape
 
@@ -17,9 +19,11 @@ size=obj.images.length; // when image field is array
 // 
 // 
 for(let i=0;i<size;i++){
+                var ig=imageFolder+obj.images[i];
     tape.innerHTML+=`
         <div class="tap-image-container">
-            <img src="${obj.images[i]}" alt="" class="tap-image" onclick='openImage(this)'>
+            
+            <img src="${ig}" alt="" class="tap-image" onclick='openImage(this)'>
         </div>      
     `;
 }
@@ -56,7 +60,7 @@ pName.innerHTML+=obj.name;
 //
 var pPrice=document.getElementById('price');
 pPrice.innerHTML+=`Rs.
-                    <span> ${obj.perMeterPrice} </span> /-  Per Meter`;
+                    <span> ${obj.price} </span> /-  Cut&Sew`;
 
 
  //  making text for user
@@ -102,21 +106,3 @@ else{
     desc.innerText=obj.description;
 }
 
-function increaseProduct(){
-    var q=parseInt(document.getElementById('quantity_value').value);
-    console.log(q);
-    q++;
-    document.getElementById('quantity_value').value = q; // update input field
-    console.log(q);
-}
-
-function decreaseProduct(){
-    var q=parseInt(document.getElementById('quantity_value').value);
-    console.log(q);
-    if(q>1){
-    q--;
-    document.getElementById('quantity_value').value = q; // update input field
-    console.log(q);
-    }
-
-}

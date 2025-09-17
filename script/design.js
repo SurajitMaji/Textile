@@ -60,7 +60,7 @@ pName.innerHTML+=obj.name;
 //
 var pPrice=document.getElementById('price');
 pPrice.innerHTML+=`Rs.
-                    <span> ${obj.price} </span> /-  Cut&Sew`;
+                    <span> ${obj.price} </span> /-  Fittings`;
 
 
  //  making text for user

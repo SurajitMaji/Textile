@@ -59,7 +59,6 @@ function findObject(id){
 var p1=new Design();
 p1.setInitialValues(1, 'Full Sleeve Shirt','fullSleevShirtFront.jpg','150','men');
 p1.addImage('fullSleevShirtBack.jpg');
-p1.addImage('fullSleevShirtSide.jpg');
 p1.addDescription('Get best stiching and comfotable wear');
 designList.push(p1);
 
@@ -69,4 +68,9 @@ p1.addImage('halfSleevOShirtBack.jpg');
 p1.addDescription('Get best stiching and comfotable wear');
 designList.push(p1);
   
+p1=new Design();
+p1.setInitialValues(3, 'Long Kurta','db93331e-518c-499c-bfc9-034073192da0.jpg','180','men');
+// p1.addImage('halfSleevOShirtBack.jpg');
+p1.addDescription('Get best stiching and comfotable wear');
+designList.push(p1);
 

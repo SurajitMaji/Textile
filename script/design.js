@@ -85,16 +85,61 @@ pPrice.innerHTML+=`Rs.
         <a  class="add-to-cart-btn" href="https://wa.me/919874323889?text=${textToSelf}" target="_blank">Add to Cart</a>   
                     
     `;
+// size set up
+var dressSize=document.getElementById('size_setup');
 
-// set up the available color
-var color=document.getElementById('avail_color_area');
-// size=obj.image.length;  when multiple colors are available
-size=1;
-for(let i=0;i<size;i++){
-    color.innerHTML+=`
-        <span style="background-color:${obj.color}"></span>
+for(var i=0;i<obj.sizeWisePrice.length;i++){    
+    const idVar='sizeBox'+i
+    if(obj.sizeWisePrice[i][1]!=null){
+        dressSize.innerHTML+=`
+            <span class="size" id="${idVar}" onclick="showPrice(this)">${obj.sizeWisePrice[i][0]}</span>
+        `;
+    }
+    else{
+         dressSize.innerHTML+=`
+            <span class="size" id="${idVar}" >${obj.sizeWisePrice[i][0]}</span>
+        `;
+    }
+}
+if(obj.sizeWisePrice.length==0){
+    dressSize.innerHTML+=`
+        <span class="size" >Custom / General</span>
     `;
 }
+
+
+// aftering clicking on the available sizes the changes are applied through this function
+function showPrice(element){
+    let sizeBoxId=element.getAttribute("id");
+            console.log(sizeBoxId);
+    const size=element.innerText;
+    const price2=getPriceFromSize(size,obj);
+    var priceBox=document.getElementById('price');
+    priceBox.innerHTML=`Rs. ${price2} /-  Fittings`;
+    // update the variable sizeBox
+    let sizeBox=document.getElementById(sizeBoxId);
+    // update css properties of the sizeBox
+    //  the clicked sizeBox made different style
+    sizeBox.style.backgroundColor="red";
+    sizeBox.style.color="white";
+    sizeBox.style.border="2px solid black";
+
+    // remaining box's got same and previous style
+    for(let i=0;i<obj.sizeWisePrice.length;i++){
+            
+            const idVar='sizeBox'+i;    
+        if(sizeBoxId!=idVar){
+            let sizeBoxOthers=document.getElementById(idVar);
+            sizeBoxOthers.style.backgroundColor="white";
+            sizeBoxOthers.style.color="black";
+            sizeBoxOthers.style.border="2px dashed black";
+
+        }
+    }
+
+
+}
+
 
 //add description
 

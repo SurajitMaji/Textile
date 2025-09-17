@@ -138,6 +138,11 @@
     border-radius: 5px;
     padding: 2px 5px;
 }
+.quantity-setup input.quantity-value{
+    border: none;
+    outline:none;    
+    text-align: center;
+}
 .add,
 .minus{
     cursor: pointer;
@@ -189,7 +194,12 @@
         height: fit-content;
     }
 
-
+    .quantity-setup input.quantity-value{
+        border: none;
+        outline:none;    
+        width: 35px;
+        text-align: center;
+    }
 }
 
 

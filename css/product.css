@@ -82,6 +82,7 @@
 .color-set-area,
 .quantity-set-area{
     display: flex;
+    flex-wrap: wrap;
     margin: 5px;  
     align-items: center;  
     user-select: none;
@@ -95,12 +96,14 @@
 }
 .size-setup {
     margin: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
      
 }
 .size-setup span{
     border:2px dashed black;
     padding: 2px 6px;
-    margin: 0px 2px;
+    margin: 2px;
     border-radius: 5px;
     cursor: pointer;
     transition: .9s;

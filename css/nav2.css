@@ -1,6 +1,6 @@
 :root {
     --navBgColor: #f30e06;
-    --navColor: #ffffff;
+    --navColor: #f7f7f7;
   }
 * {
     box-sizing: border-box;
@@ -107,7 +107,10 @@ a.profile img{
     width: 30px;
     border-radius: 45px;
 }
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 860px) {
     .navbar-menu {
         position: absolute;
         background-color: #333;

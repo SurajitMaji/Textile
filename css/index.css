@@ -133,6 +133,9 @@ footer {
   margin: 10px 20px;
 }
 @media (max-width: 768px) {
+  *{
+    font-size: .9rem;
+  }
   .hero{
     padding: 100px 20px;
     display: block;

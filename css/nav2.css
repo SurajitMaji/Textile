@@ -125,12 +125,12 @@ a.profile img{
     }
     
 .navbar-brand {
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 img.websiteLogo{
     width: 25px;
     height: 25px;
-    margin-right: 0px;
+    margin-right: 2px;
 }
     .navbar-menu ul {
         width: 100%;

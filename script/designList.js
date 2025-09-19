@@ -36,6 +36,7 @@ class Design{
     }
     addSizeWisePrice(size,price){
         this.sizeWisePrice.push([size,price]);
+        // for future this variable can also containg how much cloth required for the respective sizes
     }
     
 

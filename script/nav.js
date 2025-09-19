@@ -34,8 +34,10 @@ nav.innerHTML=`
             Aviyati&nbsp;Looms
         </div>
         <div class="serach-area">
-         <input type="text" class="search-bar" placeholder="Search...">
-        <input type="submit" class="search" value="search">
+            <form action="searchOut.html" method="GET" id="search-form" onsubmit="getSearchValue(event)">
+          <input type="text" class="search-bar" name="searchString" placeholder="Search..." required>
+          <input type="submit" class="search" value="search">
+          </form>
         </div>
         <div class="navbar-menu" id="navBarMenu">
             <ul>
@@ -65,3 +67,5 @@ footer.innerHTML=`
       <a href="#" target="_blank" class="footer-link">Certificates</a>
     </div>
 `;
+
+

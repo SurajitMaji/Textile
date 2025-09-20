@@ -66,6 +66,9 @@ footer.innerHTML=`
       <a href="#" target="_blank" class="footer-link">Career</a>
       <a href="#" target="_blank" class="footer-link">Certificates</a>
     </div>
+    
 `;
+
+
 
 

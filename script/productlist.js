@@ -85,6 +85,8 @@ function findObject(id){
         }
         return false;
     }
+
+
 // var variable=new Product(1,
 //     'Product Name',
 //     'ImageURL',
@@ -98,6 +100,9 @@ function findObject(id){
 //     New,
 //     Available,
 //     See);
+
+
+// add product start
 var p1=new Product();    
      p1.setRequiredValues(1,    'Shirt',    './collection/IMG_20250905_010724.jpg',
     499.00,  
@@ -145,9 +150,6 @@ p4.addImage('./collection/b7c5caa3-c5b1-4dd0-b26c-433f1ea3733f.jpg');
 
 product_list2.push(p4);
 
-
-
-
 var p5=new Product();
     p5.setRequiredValues(5,
     'Blouse',
@@ -175,15 +177,15 @@ product_list2.push(p6);
 
 var p7=new Product();
     p7.setRequiredValues(7,
-    'Blouse',
-    './collection/20210721_182614.jpg',
-    296.00,
+    'Frock',
+    './collection/724f5c8c-52d4-49c7-9cce-65da016dbdd.jpg',
+    65.00,
     '1-2Y',
     'rgba(10, 6, 6, 1)',
-     'women' 
+     'girls' 
     );
+    p7.addImage('./collection/08cfde54-764b-4610-8695-c058e324ca.jpg');
 product_list2.push(p7);
-p7.makeUnseen();
 
 var p8=new Product();
     p8.setRequiredValues(8,
@@ -229,8 +231,8 @@ var p11=new Product();
     'rgba(165, 4, 4, 1)',
      'kids' 
     );
-p11.addImage('./collection/81095598-3a6b-4d4e-be45-6a310ef.jpg');
-p11.addDescription('This is Pure Cutton and Suitable for 6-7 years old baby girl');
+    p11.addImage('./collection/81095598-3a6b-4d4e-be45-6a310ef.jpg');
+    p11.addDescription('This is Pure Cutton and Suitable for 6-7 years old baby girl');
 product_list2.push(p11);
 
 var p12=new Product();
@@ -246,6 +248,14 @@ var p12=new Product();
 product_list2.push(p12);
 
 
+
+
+
+
+
+//add product end 
+
+// functions worked on those variables
 
         
   

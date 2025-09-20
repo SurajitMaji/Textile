@@ -181,7 +181,7 @@ var p7=new Product();
     './collection/724f5c8c-52d4-49c7-9cce-65da016dbdd.jpg',
     65.00,
     '1-2Y',
-    'rgba(10, 6, 6, 1)',
+    'rgba(255, 129, 156, 1)',
      'girls' 
     );
     p7.addImage('./collection/08cfde54-764b-4610-8695-c058e324ca.jpg');
@@ -189,25 +189,28 @@ product_list2.push(p7);
 
 var p8=new Product();
     p8.setRequiredValues(8,
-    'Jhabela',
-    './collection/IMG_20210811_125859.jpg',
-    60.00,
-    'rgba(7, 1, 56, 1)',
-     'kids' 
-
+    'Frock',
+    './collection/IMG_20250919_17311~F.jpg',
+    75.00,
+    '6-7Y',
+    'rgba(70, 255, 141, 1)',
+     'girls' 
     );
+      p8.addImage('./collection/IMG_20250919_1732.jpg');
+    p8.addDescription('Frock For 6 to 7 years girl');
 product_list2.push(p8);
 
 var p9=new Product();
     p9.setRequiredValues(9,
-    'Jhabela',
-    './collection/IMG_20210912_115926.jpg',
-    35.00,
-    '2-10M',
-    'rgba(29, 28, 28, 1)',
+    'Frock',
+    './collection/IMG_20250919_173754~F.jpg',
+    45.00,
+    '1.5-2Y',
+    'rgba(1, 68, 168, 1)',
      'kids' 
 
     );
+      p9.addImage('./collection/IMG_20250919_173704~B.jpg');
 product_list2.push(p9);
 
 var p10=new Product();

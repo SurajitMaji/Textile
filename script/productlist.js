@@ -207,7 +207,7 @@ var p9=new Product();
     45.00,
     '1.5-2Y',
     'rgba(1, 68, 168, 1)',
-     'kids' 
+     'girls' 
 
     );
       p9.addImage('./collection/IMG_20250919_173704~B.jpg');
@@ -216,13 +216,15 @@ product_list2.push(p9);
 var p10=new Product();
     p10.setRequiredValues(10,
     'Baby Jhabela',
-     './collection/IMG_20210912_115848.jpg',
+     './collection/IMG_20250921_012030~F.jpg',
      40.00,
-     '0-8M',
-    'rgba(253, 99, 150, 1)',
-     'kids' 
+     '2-3Y',
+    'rgba(139, 63, 87, 1)',
+     'girls' 
 
     );
+      p10.addImage('./collection/IMG_20250921_012059~B.jpg');
+
 product_list2.push(p10);
 
 var p11=new Product();

@@ -130,12 +130,12 @@
 .each-achievement{
     border: 2px dashed var(--secondary-color);
     margin: 10px 20px;
-    border-radius: 75px;
+    border-radius: 95px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 15px;
+    padding: 27px 12px;
 }
 .each-achievement .quality-details{
  display: flex;
@@ -161,13 +161,15 @@
     justify-content: space-around;
     background-color:  #ff1f44ac;
     /* background-color: var(--secondary-color);; */
-    top:35px;
+    top:75px;
     border-radius: 75px;
     align-items: center;
     position: absolute;
     visibility: hidden;
     transition: .5s;
     overflow: hidden;
+    width: 0px;
+    height: 0px;
 }
 
 .member-details a{
@@ -303,7 +305,7 @@ form.contact-form input[type='submit']:hover{
     {
         padding: 5px 10px;
         margin: 20px;
-        width: 80%;
+        width: 85%;
         outline: 1px solid rgb(156, 154, 154);
         font-size: 14px;
     }

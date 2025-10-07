@@ -43,14 +43,14 @@ nav.innerHTML=`
             <ul>
                 <li><a href="index.html" class="navOption">Home</a></li>
                 <li><a href="category.html" class="navOption">Category</a></li>
-                <li><a href="collection.html" class="navOption">Collection</a></li>
+              <!--  <li><a href="collection.html" class="navOption">Collection</a></li>
                 <li><a href="clothCollection.html" class="navOption">Cloths</a></li>
-                <li><a href="designCollection.html" class="navOption">Design </a></li>
+                <li><a href="designCollection.html" class="navOption">Design </a></li> -->
                 <li><a href="kurtaCreatecode.html" class="navOption">Design&nbsp;Studio</a></li>
                 <li><a href="about.html" class="navOption">About Us</a></li>
-                <!-- <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>
+                <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>
                 <li><a href="login.html" class="navButton">Login</a></li>
-                -->
+                
             </ul>
             
         </div>

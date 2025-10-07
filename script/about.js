@@ -1,22 +1,4 @@
-// // Get the image and the link
-// let image = document.querySelector('.each-member');
-// let detalis = document.querySelector('.member-details');
 
-// // When mouse enters image area → hide the detalis
-// image.addEventListener('mouseenter', () => {
-//   detalis.style.visibility= 'visible';
-//   detalis.style.width="150px";
-//   detalis.style.height="150px";
-//   detalis.style.top="0px";
-// });
-
-// // When mouse leaves image area → show the detalis again
-// image.addEventListener('mouseleave', () => {
-//   detalis.style.visibility= 'hidden';
-//   detalis.style.width="0px";
-//   detalis.style.height="0px";
-//   detalis.style.top="75px";
-// });
 // Get all member boxes
 let members = document.querySelectorAll('.each-member');
 

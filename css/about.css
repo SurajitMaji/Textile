@@ -1,6 +1,9 @@
+:root {
+  --secondary-color: #ff1f44;
+}
 .about{
     
-    background-color: rgb(251, 246, 240);
+    background-color: rgb(255, 253, 251);
 }
 .quality-area{
     display: flex;
@@ -11,8 +14,10 @@
 .about-heading{
     font-size: 34px;
     font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
+    margin: 5px 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .about-sub-heading-area{
@@ -20,10 +25,11 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
+    margin: 5px 10px;
 
 }
 .about-sub-heading-area .line{
-    background-color: red;
+    background-color: var(--secondary-color);
     width: 25px;
     height: 2px;
 }
@@ -46,7 +52,7 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    border-bottom: 2px solid rgb(255, 14, 66);
+    border-bottom: 2px solid var(--secondary-color);
     margin: 10px 20px;
     background-color: white;
     transition: .9s;
@@ -91,7 +97,7 @@
     border-radius: 0px 0px 0px 0px;
 }
 .each-step .step-no{
-    background-color: rgb(251, 17, 76);
+    background-color: var(--secondary-color);
     padding: 6px 10px;
     color: wheat;
     display: flex;
@@ -102,8 +108,6 @@
     font-weight: bold;
     right: -10px;
     top:-10px;
-
-
 }
 
 .each-step img{
@@ -115,6 +119,27 @@
 .step-details{
     margin-left: 10px;
     padding: 5px 0px;
+}
+
+/* achievement set up  */
+.achievement_area{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;   
+}
+.each-achievement{
+    border: 2px dashed var(--secondary-color);
+    margin: 10px 20px;
+    border-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.each-achievement .quality-details{
+ display: flex;
+ justify-content: center;
 }
 
 /* member area setup */
@@ -134,13 +159,15 @@
 .member-details{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(255, 0, 0, 0.469);
+    background-color:  #ff1f44ac;
+    /* background-color: var(--secondary-color);; */
     top:35px;
     border-radius: 75px;
     align-items: center;
     position: absolute;
     visibility: hidden;
     transition: .5s;
+    overflow: hidden;
 }
 
 .member-details a{
@@ -150,8 +177,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .1s;
-    /* width: 0px; */
 }
 .member-details a:hover{
     scale: 1.1;
@@ -166,7 +191,120 @@
     object-fit: cover;
     border-radius: 75px;
 }
-img.member-img:hover .member-details{
-    display: none;
-    border: 2px solid blue;
+
+
+/* contact us section design  */
+section.contact-us{
+    background-color: antiquewhite;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 320px 0px;
+}
+.contact-details-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.contact-details-area{
+    .about-heading,
+    .quality-details{
+        display: flex;
+        justify-content: start;
+    }
+    .quality-details{
+        width: 350px;
+        margin: 5px 10px;
+    }
+}
+.each-contact{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.each-contact .contact-logo{
+    margin: 0px 5px;
+}
+.each-contact .contact-logo img{
+    width: 15px;
+}
+.contact-form-area{
+    position: relative;
+    margin-left: 190px;
+}
+form.contact-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    padding: 30px 20px ;
+    box-shadow: 0px 0px 5px 3px;
+    border-radius: 10px;
+    margin: 20px 30px;
+    position: absolute;
+    right: 0;
+}
+form.contact-form input,
+form.contact-form textarea
+{
+    padding: 5px 10px;
+    margin: 20px;
+    width: 400px;
+    outline: 1px solid rgb(156, 154, 154);
+    font-size: 14px;
+}
+form.contact-form input[type='submit']{
+    background-color: var(--secondary-color);
+    border: none;
+    color: wheat;
+    border-radius: 5px;
+    padding: 7px 0px;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+form.contact-form input[type='submit']:hover{
+    background-color:white ;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+
+@media screen and (max-width:750px) {
+    section.contact-us{
+        flex-direction: column;
+        margin: 10px 0px 10px 0px;
+    }
+    .contact-form-area{
+    margin-left: 0px;
+
+    }
+
+
+    .contact-details-area{
+        .about-heading,
+        .quality-details{
+            margin: 5px 10px;
+            width: 100%;
+        }
+    }
+    .contact-form-area{
+        display: flex;
+        justify-content: center;
+        margin: 15px 10px;
+    }
+    form.contact-form{
+        position:relative;        
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    form.contact-form input,
+    form.contact-form textarea
+    {
+        padding: 5px 10px;
+        margin: 20px;
+        width: 80%;
+        outline: 1px solid rgb(156, 154, 154);
+        font-size: 14px;
+    }
 }

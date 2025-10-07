@@ -1,0 +1,172 @@
+.about{
+    
+    background-color: rgb(251, 246, 240);
+}
+.quality-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+}
+.about-heading{
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-sub-heading-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+.about-sub-heading-area .line{
+    background-color: red;
+    width: 25px;
+    height: 2px;
+}
+.about-sub-heading{
+    font-size: 14px;
+    font-family:'Trebuchet MS';
+    padding: 0px 20px;
+
+}
+.quality-features-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.each-quality{
+    box-shadow: 0px 0px 12px 2px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-bottom: 2px solid rgb(255, 14, 66);
+    margin: 10px 20px;
+    background-color: white;
+    transition: .9s;
+}
+.each-quality:hover{
+    scale: 1.05;
+}
+.each-quality img{
+    width: 90px;
+    object-fit: cover;
+}
+.quality-name,
+.step-name{
+    font-weight: bold;
+    font-size: 14px;
+}
+.quality-details,
+.step-details{
+    font-size: 10px;
+    color: rgb(139, 139, 139);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* step area  */
+.step-area{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+}
+.each-step{
+    width: 200px;
+    margin: 20px;
+    position: relative; 
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.each-step:hover{
+    transition: .7s;
+    box-shadow: 5px 5px 5px 2px;
+    border-radius: 0px 0px 0px 0px;
+}
+.each-step .step-no{
+    background-color: rgb(251, 17, 76);
+    padding: 6px 10px;
+    color: wheat;
+    display: flex;
+    position: absolute;
+    border-radius: 55px;
+    box-shadow: 0px 0px 5px 2px;
+    font-size: 16px;
+    font-weight: bold;
+    right: -10px;
+    top:-10px;
+
+
+}
+
+.each-step img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+.step-name,
+.step-details{
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+/* member area setup */
+.member-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.each-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    background-color: white;
+}
+.member-details{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 0, 0, 0.469);
+    top:35px;
+    border-radius: 75px;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.member-details a{
+    background-color: white;
+    border-radius: 55px;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+    /* width: 0px; */
+}
+.member-details a:hover{
+    scale: 1.1;
+}
+.member-details a img{
+    display: flex;
+    width: 20px;
+}
+.member-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 75px;
+}
+img.member-img:hover .member-details{
+    display: none;
+    border: 2px solid blue;
+}

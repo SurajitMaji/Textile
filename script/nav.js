@@ -5,7 +5,7 @@ const h=document.getElementsByTagName("head")[0];
     h.innerHTML+=`<link rel="shortcut icon" href="./assets/aviyati.ico" type="image/x-icon">
     
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
+<!-- <link rel="stylesheet" href="./css/index.css"> -->
   <link rel="stylesheet" href="./css/nav2.css"> 
   <link rel="stylesheet" href="./css/menuButton.css">
     <meta property="og:title" content="Aviyati Textile Website">

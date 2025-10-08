@@ -65,8 +65,8 @@ img{
     justify-content: center;
 }
 .fabric-image-area img{
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 180px;
     object-fit: cover;
 }
 .fabric-name{

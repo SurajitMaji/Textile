@@ -46,9 +46,9 @@ nav.innerHTML=`
               <!--  <li><a href="collection.html" class="navOption">Collection</a></li>
                 <li><a href="clothCollection.html" class="navOption">Cloths</a></li>
                 <li><a href="designCollection.html" class="navOption">Design </a></li> -->
-                <li><a href="kurtaCreatecode.html" class="navOption">Design&nbsp;Studio</a></li>
+                <li><a href="designStudio.html" class="navOption">Design&nbsp;Studio</a></li>
                 <li><a href="about.html" class="navOption">About Us</a></li>
-                <li><a href="signUp.html" class="navButton">Sign&nbsp;Up</a></li>
+                <li><a href="userProfile.html" class="navButton">Sign&nbsp;Up</a></li>
                 <li><a href="login.html" class="navButton">Login</a></li>
                 
             </ul>

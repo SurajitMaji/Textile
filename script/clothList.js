@@ -79,3 +79,29 @@ c2.setCloth(
 );
 
 clothList.push(c2);
+
+var c3=new Cloth();
+c3.setCloth(
+    3,
+    'Pure Wool',
+     'Siyam Super', 
+     'rgba(253, 241, 157, 1)',
+     320.00,
+     'The cloth is smooth and softy. Specially for Winter season',
+     './clothes/968ff6e71ae2571dc6f3abc074995bfd.jpg'
+);
+
+clothList.push(c3);
+
+var c4=new Cloth();
+c4.setCloth(
+    4,
+    'Denim Gints',
+     'Raymond', 
+     'rgba(37, 35, 96, 1)',
+     440.00,
+     'The cloth is smooth and softy',
+     './clothes/1000_F_5125394_44DBzqEaEVzDX51xDv47miI3wVrJRkKL.jpg'
+);
+
+clothList.push(c4);

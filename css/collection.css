@@ -99,6 +99,15 @@
    img.ratting-star{
     width: 20px;
    }
+
+/* cloth collection set up  */
+#clothCollection{
+   .product-image{
+      object-fit: cover;
+   }
+}
+
+
    @media (max-width: 767px) {
    .product-area{
       margin:20px 0px;

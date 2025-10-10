@@ -36,7 +36,8 @@ img{
     grid-template-columns: 1fr 2fr;
 }
 .studio-first-col{
-    border: 1px solid var(--primaryColor);
+    display: flex;
+    flex-direction: column;
 }
 .dress-preview-area{
     display: flex;
@@ -45,7 +46,7 @@ img{
     align-items: center;
     position: relative;
     padding: 10px;
-    border-bottom: 10px solid var(--primaryColor);
+    border-bottom: 10px solid var(--secondaryColor);
 }
 .zoom-area{
     display: flex;
@@ -61,17 +62,28 @@ img{
     width: 25px;
     cursor: pointer;
 }
+#zoom_in{
+    cursor: zoom-in;
+}
+#zoom_out{
+    cursor: zoom-out;
+}
 .dress-image-area{
     display: flex;
     justify-content: center;
-    overflow: scroll;
     z-index: 0;
+    overflow: scroll;
+    border: 2px solid #ccc;
 }
-.dress-image-area img{
-    height: 300px;
-    width: 100%;
+#main_dress_image{    
+    height: auto;
+    width: 100%;  
+    transform-origin: top left;
+    transition: .5s ease;
+    transform: scale(1);
     object-fit: contain;
 }
+
 .rotate-area{
     display: flex;
     flex-direction: row;
@@ -120,10 +132,14 @@ img{
     margin: 2px 5px;
 }
 .avilable-sizes .each-size{
-    border: 2px solid var(--primaryColor);
+    border: 2px solid var(--secondaryColor);
     margin: 2px;
     padding: 2px 5px;
     cursor: pointer;
+    transition: .5s;
+}
+.avilable-sizes .each-size:hover{
+    border: 2px solid var(--primaryColor);
 }
 .price-details-area{
     display: flex;

@@ -1,6 +1,28 @@
 
+// types of product fetch
+let product_area=document.getElementById('product_category');
+let total_product=15;
+let productImgFolder='./assets/';
+let productArray=[
+    ['Dress', 'longChuridar.jpg','collection.html'],
+    ['Fabric', 'Twill-Fabric.jpg','clothCollection.html'],
+    ['Design', '768bd038-b029-45b8-9535-d83f37a2cd1e.jpeg','designCollection.html']
+];
+for(let i=0;i<productArray.length;i++){    
+    let imgSRC=productImgFolder+productArray[i][1];
+    product_area.innerHTML+=`
+        <a class="each-product" href='${productArray[i][2]}'>
+            <div class="product-image-area">
+                <img src="${imgSRC}" alt="" srcset="">
+            </div>
+            <div class="product-name">${productArray[i][0]}</div>
+        </a>
+    
+    `;
+}
 
-// category fetch
+
+// category of Dresses fetch
 let cat_area=document.getElementById('dress_category');
 let total_cat=15;
 let catImgFolder='./assets/';

@@ -25,4 +25,8 @@ function mainDressZoomOut(){
 }
 
 
+// silhouette image handling 
+function openDressPreview(element){    
+            main_image.src=element.src;
+}
 

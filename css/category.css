@@ -21,6 +21,43 @@ img{
     margin: 20px;
     
 }
+.product-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.each-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+.product-image-area{
+    display: flex;
+    justify-content: center;
+}
+.product-image-area img{
+    width: 100px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    font-size: 12px;
+
+}
+
+
 .dress-category{
     max-width: 650px;
     display: flex;

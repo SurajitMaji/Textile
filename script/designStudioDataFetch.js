@@ -51,8 +51,124 @@ for(let j=0;j<blouse2.cloth.length;j++){
     }
 }
 
+function tagsName(list,tagName){
+    let result=[];
+    for(let i=0;i<list.length;i++){
+        if(list[i].portion==tagName){
+            result.push(list[i].dressPartName);
+        }
+    }
+    return result;
+}
+
+function capitalizeFirstLetter(str) {
+    if (!str) return ""; 
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+
+
+
 
 // openBlouseStudio() -> open the studio for making a blouse 
+function openBlouseSilhouette(list,name) 
+    // this fuction return the silhouette area's content where the peramenters are
+    // list -> dressPartList
+    // name -> are the parts name of shilhouette like - front, back 
+{
+    let areaResult='';
+    
+    for(let i=0;i<list.length;i++){
+        if(list[i].dressPartName==name){       
+                areaResult=``;
+                for(let j=0;j<list[i].dressElementList.length;j++){
+                        let imageURL='./imagesR/'+list[i].dressElementList[j].image;
+                        if(list[i].dressElementList[j].image==null){
+                            imageURL="./assets/7415529.png";
+                        }
+                        areaResult+=`
+                        <div class="each-shilhouetee">
+                            <div class="silhouette-image-area">
+                                <img src="${imageURL}" alt="dress" onclick="openDressPreview(this)">
+                            </div>
+                            <div class="silhouette-name">
+                                ${list[i].dressElementList[j].name} 
+                            </div>
+                            <div class="shilhouette-price-area">
+                                <span class="shilouette-price">
+                                    ${list[i].dressElementList[j].price}
+                                </span> Rs.
+                            </div>
+                        </div>
+                    `;
+                }
+                break;
+            }
+    }
+    return areaResult;
+}
+function openBlouseComponent(list,name) 
+    // this fuction return the silhouette area's content where the peramenters are
+    // list -> dressPartList
+    // name -> are the parts name of shilhouette like - sleeve, button 
+{
+    let areaResult='';
+    
+    for(let i=0;i<list.length;i++){
+        if(list[i].dressPartName==name){       
+                areaResult=``;
+                for(let j=0;j<list[i].dressElementList.length;j++){
+                        let imageURL='./imagesR/'+list[i].dressElementList[j].image;
+                        if(list[i].dressElementList[j].image==null){
+                            imageURL="./assets/7415529.png";
+                        }
+                        areaResult+=`
+                        <div class="each-shilhouetee">
+                            <div class="silhouette-image-area">
+                                <img src="${imageURL}" alt="dress" onclick="openDressPreview(this)">
+                            </div>
+                            <div class="silhouette-name">
+                                ${list[i].dressElementList[j].name} 
+                            </div>
+                            <div class="shilhouette-price-area">
+                                <span class="shilouette-price">
+                                    ${list[i].dressElementList[j].price}
+                                </span> Rs.
+                            </div>
+                        </div>
+                    `;
+                }
+                break;
+            }
+    }
+    return areaResult;
+}
+
+function openBlousefront(element){
+    let parent =document.querySelector('#silhouette_tag_area');
+    let children=parent.querySelectorAll('#dress_tag');
+    children.forEach(child => {
+    child.className='dress-type-tag';
+    });
+
+    element.className+=` active-dress-tag`;
+     let silhouette_area=openBlouseSilhouette(blouse.dressPartList,'front');
+     document.getElementById('silhouette_area').innerHTML=silhouette_area;
+    
+}
+function openBlouseback(element){
+
+    let parent =document.querySelector('#silhouette_tag_area');
+    let children=parent.querySelectorAll('#dress_tag');
+    children.forEach(child => {
+    child.className='dress-type-tag';
+    });
+
+    element.className+=` active-dress-tag`;
+     let silhouette_area=openBlouseSilhouette(blouse.dressPartList,'back');
+     document.getElementById('silhouette_area').innerHTML=silhouette_area;
+    
+}
 function openBlouseStudio(){
     let imageFolder='./imagesR/';
     let previewIMG=blouse.dressPartList[0].dressElementList[0].image;    
@@ -63,7 +179,52 @@ function openBlouseStudio(){
     document.getElementById('choose1heading').innerHTML=`Step 1: Choose a ${blouse.portion[0]}`;
     document.getElementById('choose2heading').innerHTML=`Step 2: Choose a ${blouse.portion[1]}`;
     document.getElementById('choose3heading').innerHTML=`Step 3: Choose a ${blouse.portion[2]}`;
-    for(let i=0;i<blouse.dressPartList.length;i++){
-        
+    
+    
+    //setting tag names 
+    // blouse.showDress();
+    let tag1=document.getElementById('silhouette_tag_area');
+    let stags=tagsName(blouse.dressPartList,'silhouette');
+    tag1.innerHTML=``;
+    for(let i=0;i<stags.length;i++){
+        if(i==0){
+            let onclickFunction='openBlouse'+stags[i]+'(this)';
+            tag1.innerHTML+=`
+            <div class="dress-type-tag active-dress-tag"  id="dress_tag" onclick='${onclickFunction}'>${capitalizeFirstLetter(stags[i])}</div>
+            `;
+        }
+        else{
+            let onclickFunction='openBlouse'+stags[i]+'(this)';
+            tag1.innerHTML+=`
+            <div class="dress-type-tag" id="dress_tag"  onclick='${onclickFunction}'>${capitalizeFirstLetter(stags[i])}</div>
+            `;
+        }
     }
+    
+    let tag2=document.getElementById('component_tag_area');
+    stags=tagsName(blouse.dressPartList,'component'); 
+    tag2.innerHTML=``;   
+    for(let i=0;i<stags.length;i++){
+        if(i==0){
+            tag2.innerHTML+=`
+            <div class="dress-type-tag active-dress-tag"  id="dress_tag">${capitalizeFirstLetter(stags[i])}</div>
+            `;
+        }
+        else{
+            tag2.innerHTML+=`
+            <div class="dress-type-tag"  id="dress_tag">${capitalizeFirstLetter(stags[i])}</div>
+            `;
+        }
+    }
+    
+    let tag3=document.getElementById('cloth_tag_area');
+    stags=tagsName(blouse.dressPartList,'fabric');
+
+    // dress component fetching
+     let silhouette_area=openBlouseSilhouette(blouse.dressPartList,'front');
+     document.getElementById('silhouette_area').innerHTML=silhouette_area;
+
+    
+
+
 }

@@ -10,7 +10,6 @@ function mainDressZoomIn() {
   if (currentZoom < maxZoom) {
     currentZoom += 0.2;
     main_image.style.transform = `scale(${currentZoom})`;
-    main_image.style.cursor = 'zoom-in';
   }
 }
 
@@ -19,7 +18,6 @@ function mainDressZoomOut(){
     if(currentZoom>1){      
         currentZoom -= 0.2;
         main_image.style.transform = `scale(${currentZoom})`;
-        main_image.style.cursor = 'zoom-in';
     }
 }
 
@@ -29,3 +27,13 @@ function openDressPreview(element){
             main_image.src=element.src;
 }
 
+function clickedComponent(elemenst){
+  // make other box border as previous which is previously clicked
+  let parent=document.querySelector('.button-area');
+  let children=parent.querySelectorAll('#each_component');
+  children.forEach(child=>{
+        child.style.border='1px solid rgb(221, 221, 221)';
+  });
+  elemenst.style.border='1px solid red';
+
+}

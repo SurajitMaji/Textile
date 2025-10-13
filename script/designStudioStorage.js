@@ -122,9 +122,9 @@ let collar=new DressPart('collar',2);
     front.addDressElement(f2);
     let f3=new DressElement('Wide Shoulder V ',99);
     front.addDressElement(f3);
-    let f4=new DressElement('Sweetheart Neck',99);
+    let f4=new DressElement('Sweetheart Neck',99,'Princess_cut_blouse_design.jpg');
     front.addDressElement(f4);
-    let f5=new DressElement('Square Shape',99);
+    let f5=new DressElement('Square Shape',89,'puffetSleeve.png');
     front.addDressElement(f5);
 
 blouse.adDressPart(front);

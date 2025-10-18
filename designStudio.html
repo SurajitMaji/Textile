@@ -11,10 +11,10 @@
     <section class="designStudio" id="">
           <section class="designStudio-area">
             <div class="design-studio-nav">
-                <div class="nav-option">HOME</div>
-                <div class="nav-option">MEN</div>
-                <div class="nav-option">WOMEN</div>
-                <div class="nav-option">KIDS</div>
+                <div class="nav-option" onclick="studioNav('home')" >HOME</div>
+                <div class="nav-option" onclick="studioNav('men')">MEN</div>
+                <div class="nav-option" onclick="studioNav('women')">WOMEN</div>
+                <div class="nav-option" onclick="studioNav('others')">Others</div>
             </div>
             <div class="studio-action-area">
                 <div class="studio-first-col">
@@ -92,15 +92,15 @@
                 </div>
                 <div class="studio-second-col">
                     <div class="dress-type-nav" id="type_of_dress">
-                        <!-- <div class="each-dress">Blouse</div>
+                        <div class="each-dress">Blouse</div>
                         <div class="each-dress">Dress</div>
                         <div class="each-dress">Skirt</div>
-                        <div class="each-dress">Pants</div> -->
+                        <div class="each-dress">Pants</div>
                     </div>
                     <div class="step1-choose">
                         <div class="tag-area" id="silhouette_tag_area">
-                            <!-- <div class="dress-type-tag active-dress-tag" id="dress_tag">Mini&nbsp;Dress</div>
-                            <div class="dress-type-tag " id="dress_tag">Max&nbsp;Dress</div> -->
+                            <div class="dress-type-tag active-dress-tag" id="dress_tag">Mini&nbsp;Dress</div>
+                            <div class="dress-type-tag " id="dress_tag">Max&nbsp;Dress</div>
                         </div>
                         <div class="step1-content-area">
                             <div class="step-choose-heading" id="choose1heading">
@@ -109,9 +109,9 @@
                             <div class="dress-step-content" id="silhouette_area">
                                 
                                 
-                                <div class="each-shilhouetee">
+                                <div class="each-shilhouetee" onclick="openDressPreview(this)">
                                     <div class="silhouette-image-area">
-                                        <img src="./design/e2995356-442f-4ad9-b88b-bcb58a8a62fd~F.jpg" alt="dress" onclick="openDressPreview(this)">
+                                        <img src="./design/e2995356-442f-4ad9-b88b-bcb58a8a62fd~F.jpg" alt="dress">
                                     </div>
                                     <div class="silhouette-name">
                                         Pricess Dress 
@@ -120,9 +120,9 @@
                                         <span class="shilouette-price">169</span> Rs.
                                     </div>
                                 </div>
-                                <div class="each-shilhouetee">
+                                <div class="each-shilhouetee" onclick="openDressPreview(this)">
                                     <div class="silhouette-image-area">
-                                        <img src="./design/a7cc7cff-8635-40ed-9e9f-26cfed8ea5d7~B.jpg" alt=""  onclick="openDressPreview(this)">
+                                        <img src="./design/a7cc7cff-8635-40ed-9e9f-26cfed8ea5d7~B.jpg" alt="" >
                                     </div>
                                     <div class="silhouette-name">
                                          Vivi Dress 
@@ -132,9 +132,9 @@
                                     </div>
                                 </div>
                                 
-                                <div class="each-shilhouetee">
+                                <div class="each-shilhouetee" onclick="openDressPreview(this)">
                                     <div class="silhouette-image-area">
-                                        <img src="./assets/8517808f-5336-4adc-bba1-bea0a2e4b4c3.jpeg" alt=""  onclick="openDressPreview(this)">
+                                        <img src="./assets/8517808f-5336-4adc-bba1-bea0a2e4b4c3.jpeg" alt="" >
                                     </div>
                                     <div class="silhouette-name">
                                         Waist Wide Kurti 
@@ -144,9 +144,9 @@
                                     </div>
                                 </div>
                                 
-                                <div class="each-shilhouetee">
+                                <div class="each-shilhouetee" onclick="openDressPreview(this)">
                                     <div class="silhouette-image-area">
-                                        <img src="./assets/woman-kurta-vector-outline.jpg" alt=""  onclick="openDressPreview(this)">
+                                        <img src="./assets/woman-kurta-vector-outline.jpg" alt="" >
                                     </div>
                                     <div class="silhouette-name">
                                         Short Kurti 
@@ -156,9 +156,9 @@
                                     </div>
                                 </div>
                                 
-                                <div class="each-shilhouetee">
+                                <div class="each-shilhouetee" onclick="openDressPreview(this)">
                                     <div class="silhouette-image-area">
-                                        <img src="./design/15a950d1-96da-4b1a-ae92-010afc91ecf8.jpg" alt=""  onclick="openDressPreview(this)">
+                                        <img src="./design/15a950d1-96da-4b1a-ae92-010afc91ecf8.jpg" alt="" >
                                     </div>
                                     <div class="silhouette-name">
                                        Long Kurti 
@@ -173,44 +173,92 @@
                     
                     <div class="step1-choose">
                         <div class="tag-area" id="component_tag_area">
-                            <!-- <div class="dress-type-tag active-dress-tag">Button</div>
+                            <div class="dress-type-tag active-dress-tag">Button</div>
                             <div class="dress-type-tag ">Sleeve</div>
                             <div class="dress-type-tag ">Collar</div>
                             <div class="dress-type-tag ">Pocket</div>
-                            <div class="dress-type-tag ">Embellishment</div> -->
+                            <div class="dress-type-tag ">Embellishment</div>
                         </div>
                         <div class="step1-content-area">
                             <div class="step-choose-heading" id="choose2heading">
                                 Step 2: Choose a Component
                             </div>
-                            <div class="component-step-content">
-                                    <div class="button-area">
-                                        <div class="each-button" id="each_component" onclick="clickedComponent(this)">
-                                            <div class="button-image">
-                                                <img src="./assets/isolated-red-button-on-white-background-vector.jpg" alt="" srcset="">
-                                            </div>
-                                            <div class="button-name">
-                                                Red
-                                            </div>
-                                        </div>
-                                        <div class="each-button" id="each_component" onclick="clickedComponent(this)">
-                                            <div class="button-image">
-                                                <img src="./assets/purpleButton.png" alt="" srcset="">
-                                            </div>
-                                            <div class="button-name">
-                                                Purple
-                                            </div>
-                                        </div>
-                                        <div class="each-button" id="each_component" onclick="clickedComponent(this)">
-                                            <div class="button-image">
-                                                <img src="./assets/blueButton.png" alt="" srcset="">
-                                            </div>
-                                            <div class="button-name">
-                                                Blue
-                                            </div>
-                                        </div>                                       
-                                        
+                            <div class="component-step-content" id="component_area">
+                                    
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/isolated-red-button-on-white-background-vector.jpg" alt="" srcset="">
                                     </div>
+                                    <div class="button-name">
+                                        Red
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/purpleButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Purple
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/blueButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Blue
+                                    </div>
+                                </div> 
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/isolated-red-button-on-white-background-vector.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Red
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/purpleButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Purple
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/blueButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Blue
+                                    </div>
+                                </div>   
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/isolated-red-button-on-white-background-vector.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Red
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/purpleButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Purple
+                                    </div>
+                                </div>
+                                <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+                                    <div class="button-image">
+                                        <img src="./assets/blueButton.png" alt="" srcset="">
+                                    </div>
+                                    <div class="button-name">
+                                        Blue
+                                    </div>
+                                </div>                                         
+                                        
+                                   
                             </div>
                         </div>
                     </div>
@@ -218,8 +266,8 @@
                     
                     <div class="step1-choose">
                         <div class="tag-area"  id="cloth_tag_area">
-                            <!-- <div class="dress-type-tag active-dress-tag">Color</div>
-                            <div class="dress-type-tag ">Fabric</div> -->
+                            <div class="dress-type-tag active-dress-tag">Color</div>
+                            <div class="dress-type-tag ">Fabric</div>
                         </div>
                         <div class="step1-content-area">
                             <div class="step-choose-heading" id="choose3heading">
@@ -283,7 +331,10 @@
   
     <script src="./script/nav.js"></script>
     <script src="./script/menuButton.js"></script>
-    <script src="./script/designStudioStorage.js"></script>
+    <script src="./script/designStudioStorage.js"></script> 
+    <script src="./script/designStudioStorageForWomen.js"></script>  
+    <script src="./script/designStudioStorageForMen.js"></script> 
+    <!-- <script src="./script/designStudioFunctions.js"></script> -->
     <script src="./script/designStudio.js"></script>
     <script src="./script/designStudioDataFetch.js"></script>
 </body> 

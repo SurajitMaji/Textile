@@ -254,12 +254,13 @@ img{
     padding: 5px 10px;
     cursor: pointer;
     transition: .7s;
+    border-radius: 5px;
 }
 .each-shilhouetee:hover{
     border: 2px solid var(--primaryColor);
 }
 .silhouette-image-area img{
-    width: 90px;
+    width: 100px;
     height: 100px;
     object-fit: contain;
 }
@@ -269,14 +270,13 @@ img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .component-step-content{
-    overflow-y:scroll ;
+    overflow-x:scroll ;
+    display: flex;
+    align-items: center;
+    margin: 5px;
 }
 
-.button-area{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-}
+
 .each-button{
     display: flex;
     justify-content: center;
@@ -285,18 +285,18 @@ img{
     border: 1px solid rgb(221, 221, 221);
     padding: 3px;
     margin: 2px;
+    
 }
 .each-button:hover{    
     cursor: pointer;
     transition: .7s;
-}
-.each-button:active{
     border: 1px solid var(--primaryColor);
-
 }
+
+
 .each-button .button-image img{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 .each-button .button-name{
@@ -306,34 +306,40 @@ img{
 
 /* step 3 */
 .color-area{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 100%;
+    display: grid;
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  grid-auto-flow: column; /* fill rows first, then move to next column */
+  gap: 10px; /* spacing between items */
+  overflow-y: scroll; /* vertical scroll */
+  padding: 10px;
 }
 .each-color{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(115, 115, 115);
     margin: 5px;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
 }
-.each-color:active{
+.each-color:hover{
     border: 2px solid var(--primaryColor);
 
 }
 .each-color .color{
     background-color: rgb(237, 122, 122);
-    width: 30px;
-    height: 30px;
-    transition: .7s;
+    width: 60px;
+    height: 60px;
+    transition: .9s;
 
 }
 .each-color .color:hover{
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 70px;
     border-radius: 5px;
     cursor: pointer;
     transition: .7s; 

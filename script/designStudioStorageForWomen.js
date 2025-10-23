@@ -82,9 +82,27 @@ blouse.addDressPart(back);
 
   
 // setting blouse button  
+    const btn1=new DressElement('Hook-Eye',0,'Hook-and-Eye-Closures-Size-1-3032310-UNPACKAGED.jpg');
+    button.addDressElement(btn1);
+    const btn2=new DressElement('Flat Shank',0);
+    button.addDressElement(btn2);
+    const btn3=new DressElement('Snap',0,'button-snaps.jpg');
+    button.addDressElement(btn3);
+    const btn4=new DressElement('Horn',0,'MS27980-1N__5f203812ef567.jpg');
+    button.addDressElement(btn4);
+    const btn5=new DressElement('Full Shank',0,'71m1IY8VQEL._AC_SL1500_.jpg');
+    button.addDressElement(btn5);
+    const btn6=new DressElement('Polyester',0,'B847OS.jpg');
+    button.addDressElement(btn6);
+    const btn7=new DressElement('Metal',0);
+    button.addDressElement(btn7);
+    const btn8=new DressElement('Wooden',0);
+    button.addDressElement(btn8);
+    const btn9=new DressElement('Knot Shank',0);
+    button.addDressElement(btn9);
+    
+
     blouse.addDressPart(button);
-    const btn1=new DressElement('Hook-Eye');
-    collar.addDressElement(btn1);
 
 womenGlobal.addDress(blouse);
 

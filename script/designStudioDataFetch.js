@@ -98,13 +98,26 @@ for(let j=0;j<blouse2.cloth.length;j++){
 
 // strat the Sudio Operation
 
+function openMainImage(dressElement){
+     // this fucntion to show main image area initially
+        let imageArea=document.getElementById('main_dress_image');
+        let imageURL='./imagesR/'+dressElement.image;
+        if(dressElement.image==null){
+            imageURL="./assets/7415529.png";
+        }
+        imageArea.src=imageURL;
+}
+
+
 function openSilhouetteTag(list)
 { // list is a dress object
-    console.log("list value",list.dressPartName);    
+
+    // console.log("list value",list);    
     let areaResult=document.getElementById('silhouette_area');
-    console.log('Size:',list.dressElementList.length);
-    areaResult.innerHTML=''
-    for(let i=0; i<list.dressElementList.length;i++){
+    // console.log('Size:',list.dressElementList.length);
+    let size=list.dressElementList.length;
+    areaResult.innerHTML='';
+    for(let i=0; i<size;i++){
 
         let imageURL='./imagesR/'+list.dressElementList[i].image;
         if(list.dressElementList[i].image==null){
@@ -128,24 +141,51 @@ function openSilhouetteTag(list)
             
                 
     }
+    openMainImage(list.dressElementList[0]) // -> show first element image of the first silhouette element
 }
+
+function openComponentTag(list) {
+    // console.log('OpenComponent Function: Prameter->',list);
+    let opearationArea=document.getElementById('component_area');
+    opearationArea.innerHTML='';
+    let size2=list.dressElementList.length;
+    for(let i=0;i<size2;i++){
+         let imageURL='./imagesR/'+list.dressElementList[i].image;
+        if(list.dressElementList[i].image==null){
+            imageURL="./assets/7415529.png";
+        }
+        opearationArea.innerHTML+=`
+        <div class="each-button" id="each_component" onclick="clickedComponent(this)">
+            <div class="button-image">
+               <img src="${imageURL}" alt="${list.dressElementList[i].name}" >
+            </div>
+            <div class="button-name">
+                ${list.dressElementList[i].name}
+            </div>
+        </div>
+        `;
+        
+    }
+   
+            
+}
+
 
 function openDress(dressObj){
 
     // fetching exixting tags
-     console.log('Dress Object Name',dressObj.dressName);
+    //  console.log('openDress Function Object Name',dressObj);
             
             document.getElementById('silhouette_area').innerHTML=''; // -> make the shilhouette area empty
             let tag1=document.getElementById('silhouette_tag_area');  
             tag1.innerHTML=``;
-
+            document.getElementById('component_area').innerHTML='';
             let tag2=document.getElementById('component_tag_area');
             tag2.innerHTML=``;  
         
         let j=0;
         let k=0;
     for(let i=0;i<dressObj.dressPartList.length;i++){
-        document.getElementById('component_area').innerHTML='';
 
         let tagCLickValue=dressObj.dressPartList[i].dressPartName;
         if(dressObj.dressPartList[i].portion=='silhouette'){
@@ -172,15 +212,19 @@ function openDress(dressObj){
                 if(k==0){
                     k++;
                     tag2.innerHTML+=`
-                    <div class="dress-type-tag active-dress-tag"  id="dress_tag" onclick=''>${capitalizeFirstLetter(dressObj.dressPartList[i].dressPartName)}</div>
+                    <div class="dress-type-tag active-dress-tag"  id="dress_tag" onclick='openComponentTag(${tagCLickValue})'>${capitalizeFirstLetter(dressObj.dressPartList[i].dressPartName)}</div>
                     `;
+                    openComponentTag(dressObj.dressPartList[i]); // -> initially sow the first component from first component tag
                 }
                 else{
                     tag2.innerHTML+=`
-                    <div class="dress-type-tag"  id="dress_tag" onclick=''>${capitalizeFirstLetter(dressObj.dressPartList[i].dressPartName)}</div>
+                    <div class="dress-type-tag"  id="dress_tag" onclick='openComponentTag(${tagCLickValue})'>${capitalizeFirstLetter(dressObj.dressPartList[i].dressPartName)}</div>
                     `;
                 }
             
+        }
+        if(k==0){ // check if there is no component then make the area null
+            document.getElementById('component_area').innerHTML='';
         }
     }
     
@@ -193,8 +237,8 @@ function openDress(dressObj){
 
 function openDressCatgorywise(parameterObj){
     // the parameter value will be home, men, women and others always 
-
-    // fetting types of dress of every domain 
+    // console.log("openDressCategory working with the paramenter",parameterObj);
+    // fetching types of dress of every domain 
     let type_of_dress=document.getElementById('type_of_dress');
     type_of_dress.innerHTML='';
     for(let i=0;i<parameterObj.dressList.length;i++){
@@ -206,12 +250,13 @@ function openDressCatgorywise(parameterObj){
                         </div>
             `;
     }
-
+    // console.log("Dress of this types",parameterObj.dressList[0].dressPartList[0].dressPartName);
+    openDress(parameterObj.dressList[0]);
     //fetching 
 
 }
 
-studioNav();
+studioNav('women');
 
 // openDressCatgorywise(womenGlobal); // ->  make the women section default
 // openDress(womenGlobal.dressList[1].dressName.dressPartList) // ->  make the blouse section default
@@ -219,22 +264,21 @@ function studioNav(parameter='home'){
     
     var globalType=new StudioCategory();
     if(parameter=='home'){
-        console.log('Home');
+        // console.log('Home');
         globalType=homeGlobal;
     }
     else if(parameter=='men'){
-        console.log('men');
+        // console.log('men');
         globalType=menGlobal;
     }
     else if(parameter=='women'){
-        console.log('wommen');
+        // console.log('wommen');
         globalType=womenGlobal;
     }
     else if(parameter=='men'){
-        console.log('others');
+        // console.log('others');
         globalType=othresGlobal;
     }
     openDressCatgorywise(globalType);
-    // console.log("GLobe Type",globalType.dressList[0].dressName);
-    // openSilhouetteTag(globalType.dressList[0]);
+    openSilhouetteTag(globalType.dressList[1]); //-> set men section as default
 }

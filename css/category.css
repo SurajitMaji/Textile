@@ -25,6 +25,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0px 10px;
 }
 .each-product{
     display: flex;

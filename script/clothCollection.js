@@ -1,7 +1,10 @@
    const cloth_area=document.getElementById('clothCollection');
    var cloths=clothList;
     for(let i=0;i<cloths.length;i++){
-        
+
+            // making image url with its containing folder
+            let clothUrl=clothImageFodlder+cloths[i].images[0];
+            console.log(clothUrl);
             //  making text for user
            var textToUser=`
            Hello%20this%20is%20my%20Cloth%20%F0%9F%91%87%0A
@@ -27,13 +30,13 @@
                         <img src="./assets/wishlist.png" class="wish-tag" alt="" srcset="">
                     </div>
                     <div class="product-image-area">
-                        <img src="${cloths[i].images[0]}" alt="" srcset="" class="product-image">
+                        <img src="${clothUrl}" alt="" srcset="" class="product-image">
                     </div>
                 </a>
                 <div class="details">
-                    <div class="product-name">
+                    <!--<div class="product-name">
                         ${cloths[i].brandName}
-                    </div>
+                    </div> -->
                     <div class="product-name">
                         ${cloths[i].name}
                     </div>
@@ -47,11 +50,11 @@
                     <a target="_blank" href="https://wa.me/919874323889?text=${textToSelf}" class="add-to-cart-btn">Add to Cart</a>   
                 </div>
                 <div class="rattings">
-                    <img src="./assets/1828884.png" class="ratting-star">
+                    <!--<img src="./assets/1828884.png" class="ratting-star">
                     <img src="./assets/1828884.png" class="ratting-star">
                     <img src="./assets/1828884.png" class="ratting-star">
                     <img src="./assets/1828970.png" class="ratting-star">
-                    <img src="./assets/1828970.png" class="ratting-star">
+                    <img src="./assets/1828970.png" class="ratting-star">  -->
 
                 </div>
             </div>

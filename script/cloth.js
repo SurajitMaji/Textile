@@ -6,7 +6,7 @@ obj=findObject(objId);
 
 //main dress image fetching
 const productImage=document.getElementById('mainImage');
-productImage.src=obj.images[0];
+productImage.src=clothImageFodlder+obj.images[0];
 
 // setting up the images tape
 
@@ -17,9 +17,10 @@ size=obj.images.length; // when image field is array
 // 
 // 
 for(let i=0;i<size;i++){
+     let clothUrl=clothImageFodlder+obj.images[i];
     tape.innerHTML+=`
         <div class="tap-image-container">
-            <img src="${obj.images[i]}" alt="" class="tap-image" onclick='openImage(this)'>
+            <img src="${clothUrl}" alt="" class="tap-image" onclick='openImage(this)'>
         </div>      
     `;
 }

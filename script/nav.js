@@ -48,8 +48,8 @@ nav.innerHTML=`
                 <li><a href="designCollection.html" class="navOption">Design </a></li> -->
                 <li><a href="designStudio.html" class="navOption">Studio</a></li>
                 <li><a href="about.html" class="navOption">About Us</a></li>
-                <li><a href="userProfile.html" class="navButton">Profile</a></li>
-                <li><a href="login.html" class="navButton">Login</a></li>
+               <!--  <li><a href="userProfile.html" class="navButton">Profile</a></li>
+                <li><a href="login.html" class="navButton">Login</a></li>-->
                 
             </ul>
             

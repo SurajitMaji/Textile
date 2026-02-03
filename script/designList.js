@@ -65,23 +65,17 @@ function getPriceFromSize(size,obj) {
 }
 
     // id,name,image,price,category -> setIntialValues function
-var p1=new Design();
-p1.setInitialValues(1, 'Full Sleeve Shirt','fullSleevShirtFront.jpg','150','men');
-p1.addImage('fullSleevShirtBack.jpg');
-p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('XS');
-p1.addSizeWisePrice('S');
-p1.addSizeWisePrice('M');
-p1.addSizeWisePrice('L');
-p1.addSizeWisePrice('XL');
-p1.addSizeWisePrice('XXL');
-designList.push(p1);
+// var p1=new Design();
+// p1.setInitialValues(1, 'Full Sleeve Shirt','fullSleevShirtFront.jpg','150','men');
+// p1.addImage('fullSleevShirtBack.jpg');
+// p1.addDescription('Get best stiching and comfotable wear');
+// designList.push(p1);
 
-p1=new Design();
-p1.setInitialValues(2, 'Full Sleeve Shirt','halfSleevOShirt.jpg','150','men');
-p1.addImage('halfSleevOShirtBack.jpg');
-p1.addDescription('Get best stiching and comfotable wear');
-designList.push(p1);
+// p1=new Design();
+// p1.setInitialValues(2, 'Full Sleeve Shirt','halfSleevOShirt.jpg','150','men');
+// p1.addImage('halfSleevOShirtBack.jpg');
+// p1.addDescription('Get best stiching and comfotable wear');
+// designList.push(p1);
   
 p1=new Design();
 p1.setInitialValues(3, 'Long Kurta','db93331e-518c-499c-bfc9-034073192da0~F.jpg','180','men');
@@ -94,20 +88,6 @@ var p1=new Design();
 p1.setInitialValues(4, 'Full Sleeve Frock','e2995356-442f-4ad9-b88b-bcb58a8a62fd~F.jpg','60','women');
 p1.addImage('e2995356-442f-4ad9-b88b-bcb58a8a62fd~B.jpg');
 p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('12',60);
-p1.addSizeWisePrice('14',60);
-p1.addSizeWisePrice('16',60);
-p1.addSizeWisePrice('18',60);
-p1.addSizeWisePrice('20',60);
-p1.addSizeWisePrice('22',60);
-p1.addSizeWisePrice('24',80);
-p1.addSizeWisePrice('26',80);
-p1.addSizeWisePrice('28',80);
-p1.addSizeWisePrice('30',80);
-p1.addSizeWisePrice('32',100);
-p1.addSizeWisePrice('34',100);
-p1.addSizeWisePrice('36',100);
-p1.addSizeWisePrice('38',100);
 designList.push(p1);
 
 
@@ -116,20 +96,6 @@ var p1=new Design();
 p1.setInitialValues(5, 'Sleeveless Frock','a7cc7cff-8635-40ed-9e9f-26cfed8ea5d7~F.jpg','80','women');
 p1.addImage('a7cc7cff-8635-40ed-9e9f-26cfed8ea5d7~B.jpg');
 p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('12',60);
-p1.addSizeWisePrice('14',60);
-p1.addSizeWisePrice('16',60);
-p1.addSizeWisePrice('18',60);
-p1.addSizeWisePrice('20',60);
-p1.addSizeWisePrice('22',60);
-p1.addSizeWisePrice('24',80);
-p1.addSizeWisePrice('26',80);
-p1.addSizeWisePrice('28',80);
-p1.addSizeWisePrice('30',80);
-p1.addSizeWisePrice('32',100);
-p1.addSizeWisePrice('34',100);
-p1.addSizeWisePrice('36',100);
-p1.addSizeWisePrice('38',100);
 designList.push(p1);
 
 
@@ -138,43 +104,26 @@ var p1=new Design();
 p1.setInitialValues(6, 'Wide Sleeve','31f7b1ef-0eab-417b-bf9c-2fa2bf61fce0.jpg','60','women_kurti');
 p1.addImage('31f7b1ef-0eab-417b-bf9c-2fa2bf61fce0.jpg');
 p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('12',60);
-p1.addSizeWisePrice('14',60);
-p1.addSizeWisePrice('16',60);
-p1.addSizeWisePrice('18',60);
-p1.addSizeWisePrice('20',60);
-p1.addSizeWisePrice('22',60);
-p1.addSizeWisePrice('24',80);
-p1.addSizeWisePrice('26',80);
-p1.addSizeWisePrice('28',80);
-p1.addSizeWisePrice('30',80);
-p1.addSizeWisePrice('32',100);
-p1.addSizeWisePrice('34',100);
-p1.addSizeWisePrice('36',100);
-p1.addSizeWisePrice('38',100);
 designList.push(p1);
 
 
 var p1=new Design();
 p1.setInitialValues(7, 'Kurti','6b28b646-a130-4de5-8d6f-07f68184c7b3.jpg','70','women_kurti');
 p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('12',60);
+
 designList.push(p1);
 
 var p1=new Design();
 p1.setInitialValues(8, 'A-Line Kurti','7b98093f-107c-4fc4-8318-347ca943e719.jpg','70','women_kurti');
 p1.addDescription('Get best stiching and comfotable wear');
-p1.addSizeWisePrice('12',60);
 designList.push(p1);
 
 var p1=new Design();
 p1.setInitialValues(9, 'Kurti','15a950d1-96da-4b1a-ae92-010afc91ecf8.jpg','70','women_kurti');
 p1.addDescription('Get best stiching and comfotable wear. Maggie Sleeve');
-p1.addSizeWisePrice('12',60);
 designList.push(p1);
 
 var p1=new Design();
 p1.setInitialValues(10, 'Kurti','2609b943-b45b-4ceb-b3eb-2df619153cec.jpg','70','women_kurti');
 p1.addDescription('Get best stiching and comfotable wear. * Full Sleeve. * Cover Front-Back');
-p1.addSizeWisePrice('12',60);
 designList.push(p1);

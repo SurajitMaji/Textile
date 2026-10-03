@@ -72,12 +72,12 @@ clothList.push(c1);
 var c2=new Cloth();
 c2.setCloth(
     2,
-    'Pure Cotton Ajrak',
-     'Pure Cotton Ajrak', 
-     'rgb(14, 36, 124) ',
+    'Pure Cotton',
+     'Pure Cotton', 
+     'rgb(51, 51, 255)',
      115.00,
      'Comfotable and Suitable for body. * 44" Width' ,
-     'b5ed59f1-451e-4d79-8fba-1dd34c71ebf52.jpg'
+     'IMG_20260928_211134.jpg'
 );
 
 clothList.push(c2);

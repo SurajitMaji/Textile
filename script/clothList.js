@@ -175,11 +175,25 @@ c10.setCloth(
     10,
     'Pure Cotton',
      '', 
+     'Red',
+     105.00,
+     'The cloth is smooth and softy. * 35" Width',
+     'IMG_20260928_211054.jpeg'
+);
+
+clothList.push(c10);
+
+var c11=new Cloth();
+c11.setCloth(
+    10,
+    'Pure Cotton',
+     '', 
      'rgba(255, 255, 255, 0)',
      74.00,
      'The cloth is smooth and softy. * 35" Width',
-     'd2faf835-dd3a-49e6-927a-8f5dc4f12e175.jpg'
+     'IMG_20260928_210709.jpeg'
 );
-c10.addImages('d2faf835-dd3a-49e6-927a-8f5dc4f12e176.jpg');
-c10.addImages('d2faf835-dd3a-49e6-927a-8f5dc4f12e177.jpg');
-clothList.push(c10);
+c11.addImages('IMG_20260928_210833.jpeg');
+c11.addImages('d2faf835-dd3a-49e6-927a-8f5dc4f12e177.jpg'); 
+clothList.push(c11);
+

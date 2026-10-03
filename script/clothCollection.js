@@ -46,8 +46,8 @@
                     </div>
                 </div>
                 <div class="action-button-area">
-                    <a target="_blank" href="https://wa.me/919874323889?text=${textToUser}" class="order-btn">Pick Out</a> 
-                    <a target="_blank" href="https://wa.me/919874323889?text=${textToSelf}" class="add-to-cart-btn">Add to Cart</a>   
+                    <a target="_blank" href="https://wa.me/917439764284?text=${textToUser}" class="order-btn">Pick Out</a> 
+                    <a target="_blank" href="https://wa.me/917439764284?text=${textToSelf}" class="add-to-cart-btn">Add to Cart</a>   
                 </div>
                 <div class="rattings">
                     <!--<img src="./assets/1828884.png" class="ratting-star">

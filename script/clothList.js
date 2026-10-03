@@ -77,7 +77,7 @@ c2.setCloth(
      'rgb(51, 51, 255)',
      115.00,
      'Comfotable and Suitable for body. * 44" Width' ,
-     'IMG_20260928_211134.jpg'
+     'IMG_20260928_211134.jpg.jpeg'
 );
 
 clothList.push(c2);

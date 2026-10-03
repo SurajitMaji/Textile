@@ -185,7 +185,7 @@ clothList.push(c10);
 
 var c11=new Cloth();
 c11.setCloth(
-    10,
+    11,
     'Pure Cotton',
      '', 
      'rgba(255, 255, 255, 0)',

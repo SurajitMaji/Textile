@@ -25,7 +25,7 @@ class Cloth{
         Cloth Name: ${this.name},
         Brand Name: ${this.brandName},
         Color: ${this.color},
-        Price: ${this.perMeterPrice}/Meter,    
+        Price: ${this.perMeterPrice},    
         Images: ${this.images}    
         `;
     }

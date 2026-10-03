@@ -4,7 +4,7 @@ let product_area=document.getElementById('product_category');
 let total_product=15;
 let productImgFolder='./assets/';
 let productArray=[
-    ['Dress', 'longChuridar.jpg','collection.html'],
+  //  ['Dress', 'longChuridar.jpg','collection.html'],
     ['Fabric', 'Twill-Fabric.jpg','clothCollection.html'],
     ['Design', '768bd038-b029-45b8-9535-d83f37a2cd1e.jpeg','designCollection.html']
 ];

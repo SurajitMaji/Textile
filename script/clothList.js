@@ -177,7 +177,7 @@ c10.setCloth(
      '', 
      'Red',
      105.00,
-     'The cloth is smooth and softy. * 35" Width',
+     'The cloth is smooth and softy. * 44" Width',
      'IMG_20260928_211054.jpeg'
 );
 
@@ -197,3 +197,61 @@ c11.addImages('IMG_20260928_210833.jpeg');
 c11.addImages('IMG_20260928_210750.jpeg'); 
 clothList.push(c11);
 
+
+var c12=new Cloth();
+c12.setCloth(
+    12,
+    'Pure Cotton',
+     '', 
+     'White',
+     115.00,
+     'The cloth is smooth and softy. * 44" Width',
+     'readywhite.jpeg'
+);
+
+clothList.push(c12);
+
+
+
+var c13=new Cloth();
+c13.setCloth(
+    13,
+    'Pure Cotton',
+     '', 
+     'black',
+     115.00,
+     'The cloth is smooth and softy. * 44" Width',
+     'blackwithbrown.jpeg'
+);
+
+clothList.push(c13);
+
+
+var c14=new Cloth();
+c14.setCloth(
+    14,
+    'Pure Cotton',
+     '', 
+     'rgb(255, 51, 51)',
+     115.00,
+     'The cloth is smooth and softy. * 44" Width',
+     'redwithwhitecalka.jpeg'
+);
+
+clothList.push(c14);
+
+
+var c15=new Cloth();
+c15.setCloth(
+    15,
+    'Pure Cotton',
+     '', 
+     'rgb(0, 0, 51)',
+     74.00,
+     'The cloth is smooth and softy. * 35" Width',
+     'jobaneavy.jpeg'
+);
+c15.addImages('jobabrown.jpeg');
+c15.addImages('jobared.jpeg'); 
+c15.addImages('jobapink.jpeg'); 
+clothList.push(c15);

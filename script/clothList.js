@@ -194,6 +194,6 @@ c11.setCloth(
      'IMG_20260928_210709.jpeg'
 );
 c11.addImages('IMG_20260928_210833.jpeg');
-c11.addImages('d2faf835-dd3a-49e6-927a-8f5dc4f12e177.jpg'); 
+c11.addImages('IMG_20260928_210750.jpeg'); 
 clothList.push(c11);
 

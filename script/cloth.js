@@ -78,8 +78,8 @@ pPrice.innerHTML+=`Rs.
     
     var action_area=document.getElementById('main_action_button_area');
     action_area.innerHTML=`
-        <a  class="order-btn" href="https://wa.me/919874323889?text=${textToUser}" target="_blank">Order Now</a> 
-        <a  class="add-to-cart-btn" href="https://wa.me/919874323889?text=${textToSelf}" target="_blank">Add to Cart</a>   
+        <a  class="order-btn" href="https://wa.me/917439764284?text=${textToUser}" target="_blank">Order Now</a> 
+        <a  class="add-to-cart-btn" href="https://wa.me/917439764284?text=${textToSelf}" target="_blank">Add to Cart</a>   
                     
     `;
 
